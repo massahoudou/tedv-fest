@@ -15,6 +15,18 @@ module.exports = {
       colors: {
         'primary' : '#09BD62',
         'secondary' : ''
+      },
+      keyframes: {
+        wiggle: {
+          '5%': { transform: 'scale(0.8)'},
+          '9%': { transform: 'scale(1.5)'},
+          '10%, 99%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+          '100%': {transform :'scale(1)'},
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
       }
     },
   },

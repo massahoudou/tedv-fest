@@ -12,9 +12,8 @@ const SectionSpeaker = () => {
 
             <div className="flex flex-wrap gap-5  items-center justify-center lg:justify-arround lg:gap-24 my-5">
                 {Speakers.map((speaker) => {
-                    return <>
-                      <Speaker speaker={speaker} />
-                    </>
+                    return  <Speaker key={speaker.id} speaker={speaker} />
+                    
                 })}
               
             </div>

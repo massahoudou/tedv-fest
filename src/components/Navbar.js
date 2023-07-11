@@ -72,13 +72,12 @@ const Navbar = () => {
                         />
                         <ul className="flex gap-16  flex-row  items-center  text-white">
                             {Links.map((link) => {
-                                return <>
-                                    <li>
+                                return <li key={link.name} >
                                         <Link passHref href={`${link.link}`}>
                                             {link.name}
                                         </Link>
                                     </li>
-                                </>
+                                
                             })}
 
 

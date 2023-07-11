@@ -1,9 +1,52 @@
+"use cleint"
 import { Date } from "../Date"
+import React ,{ useState , useEffect} from "react"
 import { FillButton,OutlineButton } from "../Button"
 import TimeCard from "../TimeCard"
 import Logo from '/public/images/tdev.png'
+import { Anton, Plus_Jakarta_Sans } from 'next/font/google'
 
-export const Sectionheader = () => { 
+
+
+const anton = Anton({subsets: ['latin'],weight: ['400']})
+export const Sectionheader = ({target}) => { 
+  
+  const [days, setDays] = useState('');
+  const [hours, setHours] = useState('');
+  const [minutes, setMinutes] = useState('');
+  const [seconds, setSeconds] = useState('');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now =  new window.Date();
+      const targetDate = new window.Date(target);
+      const distance = targetDate - now;
+
+      if (distance > 0) {
+        const totalSeconds = Math.floor(distance / 1000);
+        const days = Math.floor(totalSeconds / (3600 * 24));
+        const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        setDays(days < 10 ? `0${days}` : days.toString());
+        setHours(hours < 10 ? `0${hours}` : hours.toString());
+        setMinutes(minutes < 10 ? `0${minutes}` : minutes.toString());
+        setSeconds(seconds < 10 ? `0${seconds}` : seconds.toString());
+      } else {
+        setDays('00');
+        setHours('00');
+        setMinutes('00');
+        setSeconds('00');
+        clearInterval(interval);
+      }
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [target]);
+
     return <>
          <header className='pt-30 lg:p-0 bg-black flex items-center   text-white h-screen relative overflow-hidden'>
         <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
@@ -23,10 +66,10 @@ export const Sectionheader = () => {
         
           </div>
           <div className='  flex lg:flex-wrap lg:translate-y-10 md:w-fit md:h-fit gap-2 h-2/6 w-full  lg:gap-10 '>
-            <TimeCard first={true} time={40} title={"Jours"}/>
-            <TimeCard  time={40} title={"Jours"}/>
-            <TimeCard time={40} title={"Jours"}/>
-            <TimeCard  time={40} title={"Jours"}/>
+            <TimeCard first={true} time={days} title={"Jours"}/>
+            <TimeCard  time={hours} title={"heurs"}/>
+            <TimeCard time={minutes} title={"Minutes"}/>
+            <TimeCard  time={seconds} title={"Second"}/>
           </div>
           <div>
 

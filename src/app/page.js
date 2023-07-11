@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 
@@ -10,13 +10,16 @@ import SectionPartener from '@/components/sections/SectionPartener'
 import SectionSponsor from '@/components/sections/SectionSponsor'
 import { Anton, Plus_Jakarta_Sans } from 'next/font/google'
 import { Sectionheader } from '@/components/sections/SectionsHeaders'
+import Head from 'next/head';
 
 
-const anton = Anton({subsets: ['latin'],weight: ['400']})
-const jakarta = Plus_Jakarta_Sans({subsets: ['latin'], weight: ['400','500','600']})
+const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: '--font-anton' })
+const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--font-jakarta' })
 export default function Home() {
   return <div>
-     <style jsx global>{`
+    <Head>
+    </Head>
+    <style jsx global>{`
         body {
           font-family: ${jakarta.style.fontFamily} !important;
         }
@@ -24,12 +27,12 @@ export default function Home() {
           font-family: ${anton.style.fontFamily} !important;
         }
       `}</style>
-     <Sectionheader/>
-      <SectionAbout/>
-      <SectionSpeaker/>
-      <SectionPartener/>
-      <SectionSponsor/>
-      <SectionContact/>
+    <Sectionheader target={'2023-07-31T07:59:59'}/>
+    <SectionAbout />
+    <SectionSpeaker />
+    <SectionPartener />
+    <SectionSponsor />
+    <SectionContact />
   </div>
 
 }

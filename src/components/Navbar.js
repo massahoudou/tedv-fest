@@ -31,7 +31,7 @@ const Navbar = () => {
     }, []);
     return <>
         <nav>
-            <div className={` ${toggle ? "h-screen bg-black/20 backdrop-blur-lg" : "h-20 bg-black "} fixed top-0 lg:hidden overflow-hidden   w-full transition-all duration-300 z-20`}>
+            <div className={` ${toggle ? "h-screen bg-black/20 backdrop-blur-lg  duration-300 transition-all  " : "h-20 duration-300 transition-all "} fixed top-0 lg:hidden overflow-hidden   w-full   z-20`}>
                 <div className="w-11/12 mx-auto ">
                     <div className="flex flex-row justify-between items-center p-5">
                         <Image
@@ -61,7 +61,7 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div className="hidden md:fixed md:block top-0 h-fit w-full  bg-black/10  z-20 ">
+            <div className="hidden lg:fixed lg:block top-0 h-fit w-full  bg-black/10  z-20 ">
                 <div className="flex h-24 w-10/12 mx-auto items-center  justify-between z-20 ">
                     <div className="flex items-center justify-center gap-10">
                         <Image

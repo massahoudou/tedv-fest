@@ -11,6 +11,7 @@ import SectionSponsor from '@/components/sections/SectionSponsor'
 import { Anton, Plus_Jakarta_Sans } from 'next/font/google'
 import { Sectionheader } from '@/components/sections/SectionsHeaders'
 import Head from 'next/head';
+import SectionProgram from '@/components/sections/SectionProgram';
 
 
 const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: '--font-anton' })
@@ -30,6 +31,7 @@ export default function Home() {
     <Sectionheader target={'2023-07-31T07:59:59'}/>
     <SectionAbout />
     <SectionSpeaker />
+    <SectionProgram/>
     <SectionPartener />
     <SectionSponsor />
     <SectionContact />

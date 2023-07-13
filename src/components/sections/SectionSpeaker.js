@@ -8,9 +8,9 @@ const SectionSpeaker = () => {
            <div className="text-green-400 font-bold uppercase text-center">
             Tdev fest Speekers
             </div>
-            <h3 className=" text-7xl md:text-[8rem] uppercase text-center">Intervenants</h3>
+            <h3 className=" text-7xl lg:text-[8rem] uppercase text-center">Intervenants</h3>
 
-            <div className="flex flex-wrap gap-5  items-center justify-center lg:justify-arround lg:gap-24 my-5">
+            <div className="flex flex-wrap gap-5 md:mt-10  items-center justify-center lg:justify-arround lg:gap-24 my-5">
                 {Speakers.map((speaker) => {
                     return  <Speaker key={speaker.id} speaker={speaker} />
                     

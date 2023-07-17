@@ -10,6 +10,7 @@ const Navbar = () => {
     const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
 
     const isScrolling = () => {
+        console.log("hello");
         setIsSticky(window.scrollY > 100 ? true : false);
         if (isMobileOrTablet && toggle) {
             setToggle(false);
@@ -28,10 +29,15 @@ const Navbar = () => {
 
     useEffect(() => {
         checkMobileOrTablet();
+        window.addEventListener('scroll', isScrolling);
+
+        return () => {
+          window.removeEventListener('scroll', isScrolling);
+        };
     }, []);
     return <>
         <nav>
-            <div className={` ${toggle ? "h-screen bg-black/20 backdrop-blur-lg  duration-300 transition-all  " : "h-20 duration-300 transition-all "} fixed top-0 lg:hidden overflow-hidden   w-full   z-20`}>
+            <div  className={` ${toggle ? "h-screen bg-black/20 backdrop-blur-lg  duration-300 transition-all  " : "h-20 duration-300 transition-all "} fixed top-0 lg:hidden overflow-hidden   w-full   z-20`}>
                 <div className="w-11/12 mx-auto ">
                     <div className="flex flex-row justify-between items-center p-5">
                         <Image
@@ -48,11 +54,14 @@ const Navbar = () => {
                     </div>
                     <div>
                         <ul className="flex gap-16 h-screen flex-col text-xl items-center justify-start mt-10 text-white">
-                            <li>Accueil</li>
-                            <li>Intervenants </li>
-                            <li>Programme</li>
-                            <li>hackacton</li>
-                            <li>Faq</li>
+                        {Links.map((link) => {
+                                return <li key={link.name} >
+                                        <Link passHref href={`${link.link}`}>
+                                            {link.name}
+                                        </Link>
+                                    </li>
+                                
+                            })}
                         </ul>
                     </div>
                 </div>
@@ -61,7 +70,7 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div className="hidden lg:fixed lg:block top-0 h-fit w-full  bg-black/10  z-20 ">
+            <div className={` ${ isSticky ? "bg-black/40 backdrop-blur-lg " : ""} hidden lg:fixed lg:block top-0 h-fit w-full  z-20 `}>
                 <div className="flex h-24 w-10/12 mx-auto items-center  justify-between z-20 ">
                     <div className="flex items-center justify-center gap-10">
                         <Image
@@ -84,7 +93,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="text-white   w-fit">
-                        <FillButton title="Incription " />
+                        <FillButton title="Inscription " />
                     </div>
                 </div>
             </div>

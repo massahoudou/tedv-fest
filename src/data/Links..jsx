@@ -5,15 +5,15 @@ const Links = [
  },
  {
     name: "A propos",
-    link: "/",
+    link: "#about",
  },
  {
     name: "Intervenants",
-    link: "/",
+    link: "#speaker",
  },
  {
     name: "Programmes",
-    link: "/",
+    link: "#program",
  },
  {
     name: "hackaton",
@@ -21,11 +21,11 @@ const Links = [
  },
  {
     name: "Faq",
-    link: "/",
+    link: "/faq",
  },
  {
     name: "Contact",
-    link: "/",
+    link: "/#contact",
  }
 ]
 export default  Links 

@@ -4,11 +4,10 @@ import React ,{ useState , useEffect} from "react"
 import { FillButton,OutlineButton } from "../Button"
 import TimeCard from "../TimeCard"
 import Logo from '/public/images/tdev.png'
-import { Anton, Plus_Jakarta_Sans } from 'next/font/google'
+import { Anton } from 'next/font/google'
 
 
-
-const anton = Anton({subsets: ['latin'],weight: ['400']})
+const anton = Anton({ subsets: ['latin'] , weight: ['400'] , variable: "--font-anton"})
 export const Sectionheader = ({target}) => { 
   
   const [days, setDays] = useState('');
@@ -47,12 +46,11 @@ export const Sectionheader = ({target}) => {
     };
   }, [target]);
 
-    return <>
-         <header className='pt-20 md:p-0 bg-black flex items-center   text-white h-screen relative overflow-hidden'>
+    return <header id="header" className='pt-20 md:p-0 bg-black flex items-center   text-white h-screen relative overflow-hidden'>
         <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
-          <div className="h-4/6 md:h-4/6 flex flex-col justify-center  lg:justify-end md:justify-end  ">
+          <div className="h-4/6 md:h-4/6 flex flex-col justify-center  lg:justify-end max-xl:justify-center  max-xl:text-[9rem] md:justify-end  ">
             <Date/>
-            <h1 className='text-5xl md:text-[6rem] lg:text-[7rem] py-2 lg:p-0 md:mb-4'>
+            <h1  className={` ${anton.className} text-5xl md:text-[6rem] lg:text-[7rem]  py-2 lg:p-0 md:mb-4`}>
               TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-300'>2023</span>
             </h1>
             <p className=' text-normal lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14'>
@@ -65,7 +63,7 @@ export const Sectionheader = ({target}) => {
             </div>
         
           </div>
-          <div className=' items-start lg:items-baseline  flex lg:flex-wrap lg:translate-y-10 md:w-full md:h-full  gap-2 h-2/6 w-full  lg:gap-10 '>
+          <div className=' items-start lg:items-baseline  flex lg:flex-wrap lg:translate-y-10 md:w-full md:h-full lg:h-fit  gap-2 h-2/6 w-full lg:w-fit  max-xl:w-2/6 lg:gap-10 '>
             <TimeCard first={true} time={days} title={"Jours"}/>
             <TimeCard  time={hours} title={"heurs"}/>
             <TimeCard time={minutes} title={"Minutes"}/>
@@ -93,5 +91,5 @@ export const Sectionheader = ({target}) => {
           </div>
         </div>
       </header>
-    </>
+    
 }

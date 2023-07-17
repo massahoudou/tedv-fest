@@ -21,8 +21,6 @@ body {
 }
 
 @layer base {
-
-
   .btn {
     @apply py-3 px-7  uppercase  my-3 cursor-pointer  font-semibold ;
   }

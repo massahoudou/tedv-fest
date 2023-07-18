@@ -2,19 +2,19 @@ import Link from "next/link";
 
 export const FillButton = ({ title  , href }) => {
     return (
-        <>
-            <Link href={href ?? "#"} passHref className=" btn btn-primary">
+        
+            <Link href={href ?? "#"} passHref className=" btn btn-primary hover:bg-green-400 hover:scale-105  duration-100 font-semibold" >
                 <span className=" ">{title}</span>
             </Link>
-        </>
+        
     );
 };
 
 
-export const OutlineButton = ({ title }) => {
+export const OutlineButton = ({ title , href}) => {
     return (
-        <>
-            <Link href="/" passHref className=" group flex  items-center justify-evenly  btn btn-outline">
+    
+            <Link href={href ?? "#"} passHref className=" group flex  items-center justify-evenly  btn btn-outline">
                 {title}
                 <span className="-translate-x-5 opacity-0 group-hover:translate-x-3 group-hover:opacity-100 duration-100 ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -23,6 +23,6 @@ export const OutlineButton = ({ title }) => {
                 </span>
 
             </Link>
-        </>
+      
     );
 };

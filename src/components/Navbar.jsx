@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FillButton } from "./Button";
 import Link from "next/link";
 import Links from "@/data/Links.";
-const Navbar = () => {
+const Navbar = ({ black }) => {
     const [isSticky, setIsSticky] = useState(false);
     const [toggle, setToggle] = useState(false);
     const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
@@ -32,12 +32,12 @@ const Navbar = () => {
         window.addEventListener('scroll', isScrolling);
 
         return () => {
-          window.removeEventListener('scroll', isScrolling);
+            window.removeEventListener('scroll', isScrolling);
         };
     }, []);
     return <>
         <nav>
-            <div  className={` ${toggle ? "h-screen bg-black/20 backdrop-blur-lg  duration-300 transition-all  " : "h-20 duration-300 transition-all "} fixed top-0 lg:hidden overflow-hidden   w-full   z-20`}>
+            <div className={` ${toggle ? "h-screen bg-black/20 backdrop-blur-lg  duration-300 transition-all  " : "h-20 duration-300 transition-all "} fixed top-0 lg:hidden overflow-hidden   w-full   z-50`}>
                 <div className="w-11/12 mx-auto ">
                     <div className="flex flex-row justify-between items-center p-5">
                         <Image
@@ -54,13 +54,13 @@ const Navbar = () => {
                     </div>
                     <div>
                         <ul className="flex gap-16 h-screen flex-col text-xl items-center justify-start mt-10 text-white">
-                        {Links.map((link) => {
+                            {Links.map((link) => {
                                 return <li key={link.name} >
-                                        <Link passHref href={`${link.link}`}>
-                                            {link.name}
-                                        </Link>
-                                    </li>
-                                
+                                    <Link passHref href={`${link.link}`}>
+                                        {link.name}
+                                    </Link>
+                                </li>
+
                             })}
                         </ul>
                     </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div className={` ${ isSticky ? "bg-black/40 backdrop-blur-lg " : ""} hidden lg:fixed lg:block top-0 h-fit w-full  z-20 `}>
+            <div className={` ${isSticky ? "bg-black/40 backdrop-blur-lg " : ""} hidden lg:fixed lg:block top-0 h-fit w-full  z-50 `}>
                 <div className="flex h-24 w-10/12 mx-auto items-center  justify-between z-20 ">
                     <div className="flex items-center justify-center gap-10">
                         <Image
@@ -79,14 +79,14 @@ const Navbar = () => {
                             height={60}
                             alt="Picture of the author"
                         />
-                        <ul className="flex gap-16  flex-row  items-center  text-white">
+                        <ul className={` ${black ? isSticky ? "text-white" :"text-black": "text-white" } flex gap-16  flex-row  items-center  `}>
                             {Links.map((link) => {
                                 return <li key={link.name} >
-                                        <Link passHref href={`${link.link}`}>
-                                            {link.name}
-                                        </Link>
-                                    </li>
-                                
+                                    <Link passHref href={`${link.link}`}>
+                                        {link.name}
+                                    </Link>
+                                </li>
+
                             })}
 
 

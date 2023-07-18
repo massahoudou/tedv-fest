@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={`${jakarta.className} scroll-smooth`} >
-      <Navbar />
+      
         {children}
         </body>
     </html>

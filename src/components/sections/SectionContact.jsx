@@ -4,9 +4,9 @@ import { Anton } from "next/font/google";
 
 const anton = Anton({ subsets: ['latin'] , weight: ['400'] , variable: "--font-anton"})
 const SectionContact = () => {
-    return <div id="contact" className="relative h-fit py-20 bg-black text-white text-lg overflow-hidden ">
+    return <section id="contact" className="relative h-fit py-20 bg-black text-white text-lg overflow-hidden ">
 
-            <div className="w-11/12 mx-auto">
+            <div className="w-11/12 mx-auto relative z-20 ">
                 <div className="border-b-[1px] border-white/30 pb-14 ">
                     <h6 className={`  ${anton.className}  text-7xl lg:text-[8rem] uppercase text-left`}>Contact</h6>
                     <div className="text-center flex  flex-wrap md:flex-nowrap justify-between mt-10">
@@ -48,13 +48,13 @@ const SectionContact = () => {
                 </div>
 
             </div>
-            <div className={`bg-[url(/images/tdev.png)] - bg-no-repeat bg-contain h-[35rem] w-[35rem]  right-10  blur-3xl  absolute -top-2 opacity-30 `}>
+            <div className={`bg-[url(/images/tdev.png)]  bg-no-repeat bg-contain h-[35rem] w-[35rem]  right-10  blur-3xl  absolute -top-2 opacity-30 `}>
 
             </div>
             <div className={`bg-[url(/images/tdev.png)] bg-no-repeat bg-contain h-[50rem] w-[50rem] lg:h-[90rem] lg:w-[90rem] -left-[27rem] lg:-left-[40rem]  blur-[150px] opacity-30 absolute -top-72`}>
 
             </div>
-        </div>
+        </section>
     
 }
 export default SectionContact;

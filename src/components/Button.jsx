@@ -1,9 +1,8 @@
 import Link from "next/link";
-
 export const FillButton = ({ title  , href }) => {
     return (
         
-            <Link href={href ?? "#"} passHref className=" btn btn-primary hover:bg-green-400 hover:scale-105  duration-100 font-semibold" >
+            <Link  whileTap={{ scale: 1.05 }} href={href ?? "#"} passHref className=" btn btn-primary hover:bg-green-400 hover:scale-105  duration-100 font-semibold" >
                 <span className=" ">{title}</span>
             </Link>
         

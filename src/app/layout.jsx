@@ -2,7 +2,7 @@
 import './globals.css'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import Navbar from '@/components/Navbar'
-const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'],weight: ['400'] })
+const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'],weight: ['400' ,'600' , '800'] })
 
 export const metadata = {
   title: 'Create Next App',

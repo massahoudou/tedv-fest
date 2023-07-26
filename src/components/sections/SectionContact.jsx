@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Anton } from "next/font/google";
+import Heading from "../Heading";
 
 const anton = Anton({ subsets: ['latin'] , weight: ['400'] , variable: "--font-anton"})
 const SectionContact = () => {
@@ -8,7 +9,11 @@ const SectionContact = () => {
 
             <div className="w-11/12 mx-auto relative z-20 ">
                 <div className="border-b-[1px] border-white/30 pb-14 ">
-                    <h6 className={`  ${anton.className}  text-7xl lg:text-[8rem] uppercase text-left`}>Contact</h6>
+                    <h6 className="text-left">
+                        <Heading>
+                            Contact
+                        </Heading>
+                        </h6>
                     <div className="text-center flex  flex-wrap md:flex-nowrap justify-between mt-10">
                         <div className=" flex gap-5 pl-2 flex-col">
                             <div className="flex gap-5">

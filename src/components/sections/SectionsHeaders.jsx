@@ -57,15 +57,15 @@ export const Sectionheader = ({ target }) => {
           <motion.h1 
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.4 }}
              className={` ${anton.className} text-5xl md:text-8xl lg:text-[7rem]   py-2 lg:p-0 md:mb-4`}>
             TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-300'>2023</span>
           </motion.h1>
           <motion.p
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: .2}}
-          className=' text-normal lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14'>
+           initial={{ opacity: 0, y:20  }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: .2  }}
+          className=' text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14'>
             Découvrez le TDEV Festival, l'événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable
           </motion.p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
@@ -76,10 +76,10 @@ export const Sectionheader = ({ target }) => {
 
         </div>
         <div className=' items-start lg:items-baseline flex lg:flex-wrap  md:w-full md:h-full lg:h-fit  gap-2  w-full lg:w-fit  lg:gap-10 '>
-          <TimeCard first={true} time={days} title={"Jours"} />
-          <TimeCard time={hours} title={"heurs"} />
-          <TimeCard time={minutes} title={"Minutes"} />
-          <TimeCard time={seconds} title={"Second"} />
+          <TimeCard first={true} time={days} title={"Jours"} delay={.4} />
+          <TimeCard time={hours} title={"heurs"}  delay={.5} />
+          <TimeCard time={minutes} title={"Minutes"}  delay={.6} />
+          <TimeCard time={seconds} title={"Second"}   delay={.7} />
         </div>
         <div>
 

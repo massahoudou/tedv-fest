@@ -1,3 +1,4 @@
+"use client"
 import { FillButton } from "@/components/Button";
 import Navbar from "@/components/Navbar";
 import SectionContact from "@/components/sections/SectionContact";
@@ -11,7 +12,7 @@ const About = () => {
     return <>
 
         <Navbar />
-        <header className="bg-black text-white lg:h-[40rem]  relative ">
+        <header className="bg-black bg text-white lg:h-[40rem]  relative ">
             <div className="flex flex-wrap   lg:flex-nowrap lg:w-10/12 w-11/12 mx-auto md:gap-8  py-20 lg:h-full items-center relative z-20 ">
                 <div className=" w-full h-fit  lg:w-4/12">
                     <h1 className={` ${anton.className} text-5xl md:text-[6rem] lg:text-[7rem]  py-2 lg:p-0 md:mb-4 uppercase text-center md:text-left `}>

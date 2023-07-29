@@ -54,28 +54,34 @@ export const Sectionheader = ({ target }) => {
       <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
-          <h1 
-           data-aos="zoom-out-up" data-aos-delay=""
-             className={` ${anton.className} text-5xl md:text-8xl lg:text-[7rem]   py-2 lg:p-0 md:mb-4`}>
+          <h1
+            data-aos="zoom-out-up" data-aos-delay=""
+            className={` ${anton.className} text-5xl  md:text-8xl lg:text-[7rem]   py-2 lg:p-0 md:mb-4`}>
             TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-300'>2023</span>
           </h1>
           <p
-      data-aos="fade-up" data-aos-delay="200"
-          className=' text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14'>
+            data-aos="fade-up" data-aos-delay="200"
+            className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14'>
             Découvrez le TDEV Festival, l'événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable
           </p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
             <FillButton title="Incription " />
-            <OutlineButton title="Apprendre plus " />
+            <OutlineButton href="#about" title="Apprendre plus" />
 
           </div>
 
         </div>
-        <div className=' items-start lg:items-baseline flex lg:flex-wrap  md:w-full md:h-full lg:h-fit  gap-2  w-full lg:w-fit  lg:gap-10 '>
-          <TimeCard first={true} time={days} title={"Jours"} delay={300} />
-          <TimeCard time={hours} title={"heurs"}  delay={400} />
-          <TimeCard time={minutes} title={"Minutes"}  delay={500} />
-          <TimeCard time={seconds} title={"Second"}   delay={600} />
+        <div className=' items-start justify-between  lg:items-baseline flex lg:flex-wrap h-full  md:w-full md:h-full lg:h-fit  gap-5  w-full lg:w-fit lg:gap-10  '>
+          <div className="flex lg:gap-10 gap-5 justify-evenly lg:justify-center w-full">
+            <TimeCard translate={true} first={true} time={days} title={"Jours"} delay={300} />
+            <TimeCard time={hours} title={"heurs"} delay={400} />
+          </div>
+          <div className="flex lg:gap-10 gap-5  justify-evenly y lg:justify-center w-full">
+            <TimeCard translate={true} time={minutes} title={"Minutes"} delay={500} />
+            <TimeCard time={seconds} title={"Second"} delay={600} />
+          </div>
+
+
         </div>
         <div>
 
@@ -87,12 +93,12 @@ export const Sectionheader = ({ target }) => {
       <div className={`bg-[url(/images/tdev.png)] bg-no-repeat bg-contain h-[50rem] w-[50rem] lg:h-[90rem] lg:w-[90rem] -left-[27rem] lg:-left-[40rem]  blur-[150px] opacity-40 absolute -top-72`}>
 
       </div>
-      <div className='w-fit  flex  mx-auto absolute bottom-0 left-0 right-0'>
+      <div data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom" className='w-fit  flex  mx-auto absolute bottom-0 left-0 right-0'>
         <div className='flex flex-col items-center my-2 animate-bounce'>
           <span className="hidden lg:block">
             Slide down
           </span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+          <svg className="hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
             <path fillRule="evenodd" d="M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z" clipRule="evenodd" />
           </svg>
 

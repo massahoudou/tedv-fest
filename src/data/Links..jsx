@@ -17,7 +17,7 @@ const Links = [
  },
  {
     name: "hackaton",
-    link: "/",
+    link: "/hackaton",
  },
  {
     name: "Faq",

@@ -18,7 +18,7 @@ import 'aos/dist/aos.css';
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      once: true ,
+      once: false ,
     }); 
   },[])
   return <div>

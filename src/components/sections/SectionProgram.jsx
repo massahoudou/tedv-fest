@@ -90,7 +90,7 @@ const SectionProgram = () => {
                 Programmes
             </Heading>
         </h5>
-        <div v data-aos="fade-up" daa-aos-delay="200" className=" hidden py-3 lg:py-6 px-10 flex lg:flex-row flex-col   mt-5 md:mt-10  justify-between bg-cover bg-center relative after:absolute after:top-0 after:left-0 after:right-0 after:w-full after:h-full after:bg-black/30  bg-[url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80)]">
+        <div v data-aos="fade-up" daa-aos-delay="200" className=" hidden py-3 lg:py-6 px-10  lg:flex-row flex-col   mt-5 md:mt-10  justify-between bg-cover bg-center relative after:absolute after:top-0 after:left-0 after:right-0 after:w-full after:h-full after:bg-black/30  bg-[url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80)]">
             <div className="uppercase text-xl lg:text-3xl lg:w-3/6 w-full text-center lg:text-left text-white font-black z-20  ">
                 vous pouvez télécharger la version  numerique du  programme ?
             </div>
@@ -100,11 +100,11 @@ const SectionProgram = () => {
         </div>
 
         <div className="py-10 w-11/12   lg:w-10/12 mx-auto lg:mt-10">
-            <div className="w-fit p-2 bg-gray-200 mx-auto flex "  data-aos="flip-left" daa-aos-delay="100">
+            <div className="  w-fit p-1 bg-gray-100 mx-auto flex items-center justify-center "  data-aos="flip-left" daa-aos-delay="100">
                 {items.map((item, key) => {
-                    return <button  onClick={() => handleClick(item)} key={key} className={` ${item.active ? "bg-primary  text-white shadow-lg" : ""} flex flex-col py-2 px-10  `}>
-                        <span className="uppercase text-sm">{item.title}</span>
-                        <span className="font-bold ">{item.date} </span>
+                    return <button  onClick={() => handleClick(item)} key={key} className={` ${item.active ? " btn-primary text-white shadow-lg" : ""} btn py-2 m-0  `}>
+                        <span className="uppercase text-xs md:text-sm block ">{item.title}</span>
+                        <span className="font-bold text-xs md:text-sm  ">{item.date} </span>
                     </button>
                 })}
 

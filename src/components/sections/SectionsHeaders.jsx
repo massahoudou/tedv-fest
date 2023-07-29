@@ -50,7 +50,7 @@ export const Sectionheader = ({ target }) => {
 
   return <>
     <Navbar black={false} />
-    <header id="header" className='pt-20 md:p-0 bg-black flex items-center   text-white h-screen relative overflow-hidden'>
+    <header id="header" className='pt-20 md:p-0 bg-zinc-950 flex items-center   text-white h-screen relative overflow-hidden'>
       <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
@@ -61,7 +61,7 @@ export const Sectionheader = ({ target }) => {
           </h1>
           <p
             data-aos="fade-up" data-aos-delay="200"
-            className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14'>
+            className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14 leading-relaxed'>
             Découvrez le TDEV Festival, l'événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable
           </p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
@@ -73,7 +73,7 @@ export const Sectionheader = ({ target }) => {
         </div>
         <div className=' items-start justify-between  lg:items-baseline flex lg:flex-wrap h-full  md:w-full md:h-full lg:h-fit  gap-5  w-full lg:w-fit lg:gap-10  '>
           <div className="flex lg:gap-10 gap-5 justify-evenly lg:justify-center w-full">
-            <TimeCard translate={true} first={true} time={days} title={"Jours"} delay={300} />
+            <TimeCard  first={true} time={days} title={"Jours"} delay={300}  translate={true}/>
             <TimeCard time={hours} title={"heurs"} delay={400} />
           </div>
           <div className="flex lg:gap-10 gap-5  justify-evenly y lg:justify-center w-full">

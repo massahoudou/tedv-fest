@@ -14,14 +14,16 @@ import { Anton } from 'next/font/google';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Head from 'next/head';
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      once: false ,
+      once: true ,
     }); 
   },[])
   return <div>
+
     <Sectionheader target={'2023-07-31T07:59:59'}/>
     <SectionAbout />
     <SectionSpeaker />

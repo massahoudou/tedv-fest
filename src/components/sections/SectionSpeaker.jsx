@@ -4,7 +4,7 @@ import Heading from "../Heading";
 
 const SectionSpeaker = () => {
 
-    return <div id="speaker" className="bg-black  mx-auto h-fit py-20 text-white " data-aos="fade-up">
+    return <div id="speaker" className="bg-zinc-950  mx-auto h-fit py-20 text-white " data-aos="fade-up">
         <div className="w-11/12 mx-auto ">
             <div   data-aos="fade" data-aos-delay="" className="text-green-400 font-bold uppercase text-center">
                 Tdev fest Speekers

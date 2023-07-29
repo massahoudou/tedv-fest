@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body {
  scroll-behavior: smooth;
+ background-color: white;
 }
 :root {
   --foreground-rgb: white;
@@ -38,7 +39,7 @@ body {
     @apply  before:absolute  before:left-0 before:-bottom-2 before:h-[2px] rounded-xl  before:w-0  hover:before:w-10 before:duration-300 before:bg-white  ;
 }
 .active{
-  @apply text-green-300 font-medium  before:absolute  before:left-0 before:-bottom-2 before:h-[2px] rounded-xl  before:w-10 before:duration-300 before:bg-green-300  ;
+  @apply text-primary font-medium  before:absolute  before:left-0 before:-bottom-2 before:h-[2px] rounded-xl  before:w-10 before:duration-300 before:bg-green-300  ;
 }
 .link{
   @apply relative ;

@@ -5,7 +5,7 @@ const Links = [
  },
  {
     name: "A propos",
-    link: "#about",
+    link: "/about",
  },
  {
     name: "Intervenants",
@@ -13,7 +13,7 @@ const Links = [
  },
  {
     name: "Programmes",
-    link: "#program",
+    link: "/#program",
  },
  {
     name: "hackaton",

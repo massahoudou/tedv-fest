@@ -15,8 +15,8 @@ const SectionSponsor = () => {
         <div className="flex flex-wrap gap-10 justify-center items-center py-20 ">
             {Sponsors.map((sponsor, key) => {
 
-                return <div data-aos="fade-up" data-aos-delay={key * 50}>
-                    <Image key={key}
+                return <div key={key} data-aos="fade-up" data-aos-delay={key * 50}>
+                    <Image 
                         src={sponsor.logo}
                         width={100}
                         height={100}

@@ -2,31 +2,40 @@
 import { useState } from 'react';
 
 const Questions = ({ faqItems }) => {
+  const [items, setItems] = useState(faqItems);
   const toggleFaqState = (item) => {
-    item.isOpen = !item.isOpen;
+    const updatedItems = items.map((i) => {
+
+      if (i.id === item.id) {
+        console.log(item);
+        i.isOpen = !item.isOpen;
+        return i
+      }
+      return i;
+    });
+    setItems(updatedItems);
   };
 
   return (
     <>
-      {faqItems.map((item, index) => (
-        <divdelay
-          key={index}
-         
+      {items.map((item, index) => (
+        <div
+          key={index} data-aos="fade-up" data-aos-delay={index * 50}
+
         >
           <div
             onClick={() => toggleFaqState(item)}
-            className={`lg:w-9/12 mx-auto py-7 border-grey-400 border-b-[1px] transition-all duration-100 ${
-              item.isOpen ? 'bg-gray-100' : ''
-            }`}
+            className={`lg:w-9/12 mx-auto py-7 border-grey-400 border-b-[1px] transition-all duration-100 ${item.isOpen ? 'bg-green-100' : ''
+              }`}
           >
             <div className="text-left px-3">
-              <div className="font-medium lg:text-xl flex justify-between items-start">
+              <div className="font-semibold lg:text-xl flex justify-between items-start">
                 {item.question}
                 <span>
                   {item.isOpen ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="16"delay
+                      width="16" delay
                       height="16"
                       fill=""
                       className="bi bi-caret-down-fill text-gray-300"
@@ -49,13 +58,13 @@ const Questions = ({ faqItems }) => {
                 </span>
               </div>
               {item.isOpen && (
-                <p className="pt-5 text-sm transition-all duration-100">
+                <p className="pt-5 text-sm transition-all duration-100 leading-relaxed" data-aos="fade-left" >
                   {item.answer}
                 </p>
               )}
             </div>
           </div>
-        </divdelay>
+        </div >
       ))}
     </>
   );

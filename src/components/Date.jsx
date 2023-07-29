@@ -1,10 +1,8 @@
 import { motion } from "framer-motion"
 export const Date = () => {
     return <>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4 }}
+        <div
+           data-aos="fade-up" data-aos-delay=""
          className="rounded-full  bg-gradient-to-l to-red-500 to-30% from-pink-600 w-fit flex gap-1 md:gap-3 p-1 md:p-2 text-sm mb-2 items-center font-semibold">
             <motion.span >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -15,6 +13,6 @@ export const Date = () => {
             <span className="uppercase ">
                 25 au 26 Août 2023
             </span>
-        </motion.div>
+        </div>
     </>
 }

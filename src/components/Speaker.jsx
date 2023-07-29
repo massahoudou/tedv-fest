@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 const Speaker = ({ speaker }) => {
     return <>
-        <div className="flex flex-col items-center my-5 justify-center">
+        <div   data-aos="zoom-out-up" data-aos-delay={100 * speaker.id } className="flex flex-col items-center my-5 justify-center">
             <Image className="rounded-full h-32  w-32 lg:w-40  lg:h-40 object-cover" src={speaker.profil} alt="Picture of the author"
                 width={500}
                 height={500} />

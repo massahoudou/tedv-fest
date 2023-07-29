@@ -2,7 +2,23 @@ const Parteners = [
 
     {
         name: "name",
-        logo: "",
+        logo: "/images/tdev.png",
+    },
+    {
+        name: "name",
+        logo: "/images/tdev.png",
+    },
+    {
+        name: "name",
+        logo: "/images/tdev.png",
+    },
+    {
+        name: "name",
+        logo: "/images/tdev.png",
+    },
+    {
+        name: "name",
+        logo: "/images/tdev.png",
     }
 ]
 export default Parteners ;

@@ -54,20 +54,16 @@ export const Sectionheader = ({ target }) => {
       <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
-          <motion.h1 
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4 }}
+          <h1 
+           data-aos="zoom-out-up" data-aos-delay=""
              className={` ${anton.className} text-5xl md:text-8xl lg:text-[7rem]   py-2 lg:p-0 md:mb-4`}>
             TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-300'>2023</span>
-          </motion.h1>
-          <motion.p
-           initial={{ opacity: 0, y:20  }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: .2  }}
+          </h1>
+          <p
+      data-aos="fade-up" data-aos-delay="200"
           className=' text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14'>
             Découvrez le TDEV Festival, l'événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable
-          </motion.p>
+          </p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
             <FillButton title="Incription " />
             <OutlineButton title="Apprendre plus " />
@@ -76,10 +72,10 @@ export const Sectionheader = ({ target }) => {
 
         </div>
         <div className=' items-start lg:items-baseline flex lg:flex-wrap  md:w-full md:h-full lg:h-fit  gap-2  w-full lg:w-fit  lg:gap-10 '>
-          <TimeCard first={true} time={days} title={"Jours"} delay={.4} />
-          <TimeCard time={hours} title={"heurs"}  delay={.5} />
-          <TimeCard time={minutes} title={"Minutes"}  delay={.6} />
-          <TimeCard time={seconds} title={"Second"}   delay={.7} />
+          <TimeCard first={true} time={days} title={"Jours"} delay={300} />
+          <TimeCard time={hours} title={"heurs"}  delay={400} />
+          <TimeCard time={minutes} title={"Minutes"}  delay={500} />
+          <TimeCard time={seconds} title={"Second"}   delay={600} />
         </div>
         <div>
 

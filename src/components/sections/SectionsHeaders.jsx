@@ -62,7 +62,7 @@ export const Sectionheader = ({ target }) => {
           <p
             data-aos="fade-up" data-aos-delay="200"
             className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14 leading-relaxed'>
-            Découvrez le TDEV Festival, l'événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable
+            Découvrez le TDEV Festival, l&apos;événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable
           </p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
             <FillButton title="Incription " />
@@ -98,7 +98,7 @@ export const Sectionheader = ({ target }) => {
           <span className="hidden lg:block">
             Slide down
           </span>
-          <svg className="hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+          <svg className="hidden md:block w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
             <path fillRule="evenodd" d="M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z" clipRule="evenodd" />
           </svg>
 

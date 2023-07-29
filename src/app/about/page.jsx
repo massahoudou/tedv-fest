@@ -58,7 +58,7 @@ const About = () => {
 
             <p className=" text-gray-800 w-full lg:w-7/12 text-left  py-3 lg:py-5 mb-3  md:text-center" dat-aos="fade-up" data-aos-="100">
            <strong>
-           TDEV (Togo Developers)</strong> est une communauté technologique établie au Togo en octobre 2020. Son objectif est de combler le manque de ressources éducatives dans le domaine de l'informatique pour les jeunes togolais passionnés par la technologie. Grâce à des programmes de bourses, des sessions de codage, des compétitions, des conférences et des opportunités de mentorat, TDEV offre aux jeunes âgés de 16 à 35 ans l'occasion de développer leurs compétences numériques et de se préparer aux métiers du numérique. En mettant l'accent sur l'inclusion et en favorisant la diversité des profils, TDEV contribue activement à renforcer l'écosystème technologique togolais en formant la prochaine génération de professionnels du numérique compétents et talentueux.            </p>
+           TDEV (Togo Developers)</strong> est une communauté technologique établie au Togo en octobre 2020. Son objectif est de combler le manque de ressources éducatives dans le domaine de l&apos;informatique pour les jeunes togolais passionnés par la technologie. Grâce à des programmes de bourses, des sessions de codage, des compétitions, des conférences et des opportunités de mentorat, TDEV offre aux jeunes âgés de 16 à 35 ans l&apos;occasion de développer leurs compétences numériques et de se préparer aux métiers du numérique. En mettant l&apos;accent sur l&apos;inclusion et en favorisant la diversité des profils, TDEV contribue activement à renforcer l&apos;écosystème technologique togolais en formant la prochaine génération de professionnels du numérique compétents et talentueux.            </p>
             
             <FillButton title="Contacter-Nous" />
         </section>
@@ -86,7 +86,7 @@ const About = () => {
                         <h4 className="md:text-left lg:p-0 mb-4">Objectifs</h4>
                     </Heading>
                     <p className="my-5 lg:m-0 " data-aos="fade-up" data-aos-delay="200">
-                    <strong>L'objectif</strong> de ce projet est d'explorer comment la transformation numérique peut être
+                    <strong>L&apos;objectif</strong> de ce projet est d&apos;explorer comment la transformation numérique peut être
 utilisée pour promouvoir le développement durable. Plus précisément, nous visons à :
                     </p>
                     <ul className="lg:py-5">

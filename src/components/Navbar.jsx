@@ -30,13 +30,13 @@ const Navbar = ({ black }) => {
 
     useEffect(() => {
         checkMobileOrTablet();
-        window.addEventListener('scroll', isScrolling);
-        window.addEventListener('load', isScrolling);
+        window.addEventListener('scroll', isScrolling());
+        window.addEventListener('load', isScrolling());
         window.addEventListener('resize', checkMobileOrTablet() );
 
         return () => {
-            window.removeEventListener('scroll', isScrolling);
-            window.removeEventListener('load', isScrolling);
+            window.removeEventListener('scroll', isScrolling());
+            window.removeEventListener('load', isScrolling());
         };
     }, []);
     return <>

@@ -14,7 +14,7 @@ const SectionContact = () => {
                         Contact
                     </Heading>
                 </h6>
-                <div className="text-center flex  flex-wrap md:flex-nowrap justify-between mt-10">
+                <div className="text-center flex  flex-wrap lg:flex-nowrap justify-between mt-10">
                     <div className=" flex gap-5 pl-2 flex-col" data-aos="fade-up" data-aos-delay="100">
                         <div className="flex gap-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-envelope-fill" viewBox="0 0 16 16">

@@ -59,7 +59,7 @@ const Navbar = ({ black }) => {
                         </button>
                     </div>
                     <div>
-                        <ul className="flex gap-12 h-screen flex-col text-xl items-center justify-start mt-10 text-white">
+                        <ul className="flex gap-12 h-screen flex-col  lg:items-center justify-start mt-10 text-white">
                             {Links.map((link,key) => {
                                 return <li key={link.name} className=" " >
                                     <Link onClick={()=> toggleNavBar()} passHref href={`${link.link}`} key={key} data-aos="zoom-in" data-aos-delay={key * 100 } className={` ${pathname == link.link ? "active font-semibold " : " holover  p-2"} link `} >

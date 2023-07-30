@@ -50,14 +50,14 @@ export const Sectionheader = ({ target }) => {
 
   return <>
     <Navbar black={false} />
-    <header id="header" className='pt-20 md:p-0 bg-zinc-950 flex items-center   text-white h-screen relative overflow-hidden'>
+    <header id="header" className='pt-20 md:p-0 bg-dark flex items-center   text-white h-screen relative overflow-hidden'>
       <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
           <h1
             data-aos="zoom-out-up" data-aos-delay=""
             className={` ${anton.className} text-5xl  md:text-8xl lg:text-[7rem]   py-2 lg:p-0 md:mb-4`}>
-            TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-300'>2023</span>
+            TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-secondary from-20% to-primary to-70% '>2023</span>
           </h1>
           <p
             data-aos="fade-up" data-aos-delay="200"
@@ -65,7 +65,7 @@ export const Sectionheader = ({ target }) => {
             Découvrez le TDEV Festival, l&apos;événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable
           </p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
-            <FillButton title="Incription " />
+            <FillButton href="/signup" title="Incription " />
             <OutlineButton href="#about" title="Apprendre plus" />
 
           </div>
@@ -87,10 +87,10 @@ export const Sectionheader = ({ target }) => {
 
         </div>
       </div>
-      <div className={`bg-[url(/images/tdev.png)] bg-no-repeat bg-contain h-[35rem] w-[35rem]  lg:scale-110  right-10  blur-3xl  absolute  `}>
+      <div className={`bg-[url(/images/logo.png)] bg-no-repeat bg-contain h-[35rem] w-[35rem]  lg:scale-110  right-10  blur-3xl  absolute  `}>
 
       </div>
-      <div className={`bg-[url(/images/tdev.png)] bg-no-repeat bg-contain h-[50rem] w-[50rem] lg:h-[90rem] lg:w-[90rem] -left-[27rem] lg:-left-[40rem]  blur-[150px] opacity-40 absolute -top-72`}>
+      <div className={`bg-[url(/images/logo.png)] bg-no-repeat bg-contain h-[50rem] w-[50rem] lg:h-[90rem] lg:w-[90rem] -left-[27rem] lg:-left-[40rem]  blur-[150px] opacity-40 absolute -top-72`}>
 
       </div>
       <div data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom" className='w-fit  flex  mx-auto absolute bottom-0 left-0 right-0'>

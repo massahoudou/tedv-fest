@@ -25,7 +25,7 @@ export default function Home() {
   },[])
   return <div>
 
-    <Sectionheader target={'2023-07-31T07:59:59'}/>
+    <Sectionheader target={'2023-08-25T07:59:59'}/>
     <SectionAbout />
     <SectionSpeaker />
     <SectionProgram/>

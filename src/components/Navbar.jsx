@@ -31,20 +31,21 @@ const Navbar = ({ black }) => {
     useEffect(() => {
         checkMobileOrTablet();
         window.addEventListener('scroll', isScrolling);
+        window.addEventListener('load', isScrolling);
 
         return () => {
             window.removeEventListener('scroll', isScrolling);
+            window.removeEventListener('load', isScrolling);
         };
     }, []);
     return <>
         <nav>
-            <div  className={` ${isSticky ? "bg-zinc-950/70 backdrop-blur-lg " : ""} ${toggle ? "h-screen bg-black/70 backdrop-blur-lg  duration-300 transition-all  " : "h-20 duration-300 transition-all "}  ${isMobile ? "fixed top-0  block" : "hidden "} overflow-hidden   w-full   z-50`}>
+            <div  className={` ${isSticky ? "bg-dark/70 backdrop-blur-lg " : ""} ${toggle ? "h-screen bg-black/70 backdrop-blur-lg  duration-300 transition-all  " : "h-20 duration-300 transition-all "}  ${isMobile ? "fixed top-0  block" : "hidden "} overflow-hidden   w-full   z-50`}>
                 <div className="w-11/12 mx-auto ">
                     <div className="flex flex-row justify-between items-center p-5">
                         
                         <Image
-                    
-                            src="/images/tdev.png"
+                            src="/images/logo.png"
                             width={50}
                             height={50}
                             alt="Tdev 2023"
@@ -70,7 +71,7 @@ const Navbar = ({ black }) => {
 
                             })}
                          <li>
-                         <FillButton title="Inscription " />
+                         <FillButton href="/signup" title="Inscription " />
                                     </li>
                         </ul>
                         
@@ -81,11 +82,11 @@ const Navbar = ({ black }) => {
 
                 </div>
             </div>
-            <div className={` ${isSticky ? "bg-zinc-950/70 backdrop-blur-lg " : ""}   ${isMobile ? "hidden" : "fixed block top-0"}   h-fit w-full  z-50 `}>
+            <div className={` ${isSticky ? "bg-dark/70 backdrop-blur-lg " : ""}   ${isMobile ? "hidden" : "fixed block top-0"}   h-fit w-full  z-50 `}>
                 <div className="flex h-24 w-10/12 mx-auto items-center  justify-between z-20 ">
                     <div className="flex items-center justify-center gap-10">
                         <Image
-                            src="/images/tdev.png"
+                            src="/images/logo.png"
                             width={60}
                             height={60}
                             alt="Picture of the author"
@@ -107,7 +108,7 @@ const Navbar = ({ black }) => {
                         </ul>
                     </div>
                     <div className="text-white   w-fit">
-                        <FillButton title="Inscription " />
+                        <FillButton href="/signup" title="Inscription " />
                     </div>
                 </div>
             </div>

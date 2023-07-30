@@ -16,8 +16,8 @@ const SectionGallery = () => {
                     loading="lazy"
                         className="  lg:w-2/12 h-full object-cover" data-aos="zoom-in-right"
                        src={g.url}
-                       width={300}
-                       height={300}
+                       width={500}
+                       height={500}
                        alt={g.name}
                    />
                 })}

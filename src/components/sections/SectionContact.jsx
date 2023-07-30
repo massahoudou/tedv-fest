@@ -5,15 +5,15 @@ import Heading from "../Heading";
 
 const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: "--font-anton" })
 const SectionContact = () => {
-    return <section id="contact" className="relative h-fit py-20 bg-zinc-950  text-white text-lg overflow-hidden " data-aos="fade-up" data-aos-delay="">
+    return <section id="contact" className="relative h-fit py-20 bg-dark  text-white text-lg overflow-hidden " data-aos="fade-up" data-aos-delay="">
 
         <div className="w-11/12 mx-auto relative z-20 ">
             <div className="border-b-[1px] border-white/30 pb-14 ">
-                <h6 className="text-left">
-                    <Heading>
+            <Heading>
+                <h6 className="text-left text-white">
                         Contact
-                    </Heading>
                 </h6>
+                </Heading>
                 <div className="text-center flex  flex-wrap md:flex-nowrap justify-between mt-10">
                     <div className=" flex gap-5 pl-2 flex-col" data-aos="fade-up" data-aos-delay="100">
                         <div className="flex gap-5">
@@ -65,10 +65,10 @@ const SectionContact = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex text-md h-20  justify-between items-center " data-aos="fade-up" data-aos-delay="300">
+            <div className="flex text-md h-20  justify-between items-center " data-aos="fade-up"  data-aos-anchor-placement="top-bottom" data-aos-delay="300">
                 © 2021 Copyright tdev.com
                 <Image data-aos="fade-up" data-aos-delay="400"
-                    src="/images/tdev.png"
+                    src="/images/logo.png"
                     width={40}
                     height={40}
                     alt="Picture of the author"

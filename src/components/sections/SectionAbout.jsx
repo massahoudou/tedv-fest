@@ -8,12 +8,12 @@ const SectionAbout = () => {
     return <div id="about" className="w-11/12 h-fit lg:h-screen md:w-10/12 lg:gap-10  mx-auto flex flex-wrap lg:flex-nowrap items-center ">
             <div className="flex flex-row-reverse lg:flex-row w-full lg:w-3/6 gap-5  h-72  my-10 lg:h-4/6  ">
                 <div className="flex flex-col gap-5 w-3/6 lg:items-end">
-                    <div    data-aos="zoom-out-up" data-aos-delay="" className="bg-cover bg-right-top bg-[url(/images/3.jpg)] w-5/6 h-3/6 ">
+                    <div    data-aos="zoom-out-up" data-aos-delay="" className="bg-cover bg-right-top bg-[url(/images/12.jpg)] w-full md:w-5/6 h-3/6 ">
                     </div>
-                    <div   data-aos="zoom-out-up" data-aos-delay="100" className="bg-cover bg-right-top bg-[url(/images/1.jpg)] w-4/6  h-3/6 ">
+                    <div   data-aos="zoom-out-up" data-aos-delay="100" className="bg-cover bg-right-top bg-[url(/images/7.jpeg)] w-full md:w-4/6  h-3/6 ">
                     </div>
                 </div>
-                <div   data-aos="zoom-out-up" data-aos-delay="200" className=" bg-cover bg-center bg-[url(/images/5.jpg)] w-3/6 h-full ">
+                <div   data-aos="zoom-out-up" data-aos-delay="200" className=" bg-cover bg-top bg-[url(/images/16.jpg)] w-3/6 h-full ">
                 </div>
                 
                 

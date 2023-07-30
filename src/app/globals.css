@@ -22,6 +22,7 @@ body {
 }
 
 @layer base {
+  
   .btn {
     @apply py-3 px-7  uppercase  my-3 cursor-pointer  font-semibold ;
   }
@@ -33,7 +34,6 @@ body {
   }
   .social-link {
     @apply hover:text-primary hover:scale-110 hover:shadow-xl cursor-pointer duration-200 ;
-    
   }
   .holover{
     @apply  before:absolute  before:left-0 before:-bottom-2 before:h-[2px] rounded-xl  before:w-0  hover:before:w-10 before:duration-300 before:bg-white  ;
@@ -44,4 +44,5 @@ body {
 .link{
   @apply relative ;
 }
+
 }

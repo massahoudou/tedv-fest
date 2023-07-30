@@ -5,7 +5,7 @@ import Heading from "../Heading";
 
 const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: "--font-anton" })
 const SectionContact = () => {
-    return <section id="contact" className="relative h-fit py-20 bg-dark  text-white text-lg overflow-hidden " data-aos="fade-up" data-aos-delay="">
+    return <section id="contact" className="relative h-fit py-20 bg-dark  text-white text-lg overflow-hidden " data-aos="fade-up" data-aos-delay="" data-aos-anchor-placement="top-bottom">
 
         <div className="w-11/12 mx-auto relative z-20 ">
             <div className="border-b-[1px] border-white/30 pb-14 ">

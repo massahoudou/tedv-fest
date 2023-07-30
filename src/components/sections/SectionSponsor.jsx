@@ -15,7 +15,7 @@ const SectionSponsor = () => {
        
         </h3>
         <div className="flex flex-wrap gap-10 justify-center items-center py-20 ">
-            {Sponsors.map((sponsor, key) => {
+            {/*Sponsors.map((sponsor, key) => {
 
                 return <div key={key} data-aos="fade-up" data-aos-delay={key * 50}>
                     <Image 
@@ -26,7 +26,7 @@ const SectionSponsor = () => {
                         loading="lazy"
                     />
                 </div>
-            })}
+            })*/}
 
         </div>
         <div className="py-8 text-center">

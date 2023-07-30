@@ -59,6 +59,7 @@ const Navbar = ({ black }) => {
                     <div>
                         <ul className="flex gap-12 h-screen flex-col text-xl items-center justify-start mt-10 text-white">
                             {Links.map((link,key) => {
+                                   if(!link.deseable)
                                 return <li key={link.name} className=" " >
                                     <Link onClick={()=> toggleNavBar()} passHref href={`${link.link}`} key={key} data-aos="zoom-in" data-aos-delay={key * 100 } className={` ${pathname == link.link ? "active font-semibold " : " holover  p-2"} link `} >
                                         <span data-aos="fade-up" data-aos-delay={key * 100}>
@@ -93,7 +94,8 @@ const Navbar = ({ black }) => {
                         />
                         <ul className={` ${black ? isSticky ? "text-white" :"text-black": "text-white" } flex gap-6  flex-row  items-center  `}>
                             {Links.map((link,key) => {
-                                return <li key={link.name} className="  p-2"  data-aos="fade-right" data-aos-delay={key * 50}  >
+                                if(!link.deseable)
+                                return  <li key={link.name} className="  p-2"  data-aos="fade-right" data-aos-delay={key * 50}  >
                                     <Link passHref href={`${link.link}`} key={key}  className={` ${pathname == link.link ? "active font-semibold " : " holover "} link `}>
                                         <div>
                                         {link.name}

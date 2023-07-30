@@ -15,6 +15,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
+import SectionGallery from '@/components/sections/SectionGallery';
 
 export default function Home() {
   useEffect(() => {
@@ -30,6 +31,7 @@ export default function Home() {
     <SectionProgram/>
     <SectionPartener />
     <SectionSponsor />
+    <SectionGallery/>
     <SectionContact />
   </div>
 

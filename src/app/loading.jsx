@@ -1,4 +1,3 @@
-"use client"
 import './spinner.css'
 export default function Loading () {
     return (

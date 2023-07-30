@@ -54,15 +54,13 @@ export const Sectionheader = ({ target }) => {
       <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
-          <h1
-            data-aos="zoom-out-up" data-aos-delay=""
-            className={` ${anton.className} text-5xl  md:text-8xl lg:text-[7rem]   py-2 lg:p-0 md:mb-4`}>
+          <h1 data-aos="zoom-out-up" data-aos-delay="" className={` ${anton.className} text-5xl  md:text-8xl lg:text-[9rem]   py-2 lg:p-0 md:mb-4`}>
             TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-secondary from-20% to-primary to-70% '>2023</span>
           </h1>
           <p
             data-aos="fade-up" data-aos-delay="200"
             className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14 leading-relaxed'>
-            Découvrez le TDEV Festival, l&apos;événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable
+            Découvrez le TDEV Festival, l&apos;événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable.
           </p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
             <FillButton href="/signup" title="Incription " />

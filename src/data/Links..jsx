@@ -5,7 +5,7 @@ const Links = [
     deseable: false ,
  },
  {
-    name: "A propos",
+    name: "À propos",
     link: "/about",
     deseable: false ,
  },

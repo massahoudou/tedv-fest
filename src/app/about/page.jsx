@@ -40,7 +40,7 @@ const About = () => {
                         </div>
                     </Heading>
                     <div data-aos="fade-up" data-aos-delay="300">
-                        <h2 className={` underline font-bold my-5 lg:text-3xl`}>Theme </h2>
+                        <h2 className={` underline font-bold my-5 lg:text-4xl`}>Theme </h2>
                         <p className="md:text-4xl">
                             Transformation numérique : alliée du développement durable
                         </p>

@@ -6,17 +6,16 @@ import { FillButton } from "../Button";
 
 const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: "--font-anton" })
 const SectionSponsor = () => {
-    return <div id="sponsor" className="h-fit md:py-32 w-11/12 md:w-10/12 mx-auto ">
-        <h3 className="text-center">
-
+    return <div className="bg-dark">
+        <div id="sponsor" className="h-fit md:py-32 w-11/12 md:w-10/12 mx-auto ">
             <Heading>
-                Sponsors
+                <h3 className="text-center text-white">
+                    Sponsors
+                </h3>
             </Heading>
-       
-        </h3>
-        <div className="flex flex-wrap gap-10 justify-center items-center py-20 ">
+        <div className="">
             {/*Sponsors.map((sponsor, key) => {
-
+                flex flex-wrap gap-10 justify-center items-center py-20
                 return <div key={key} data-aos="fade-up" data-aos-delay={key * 50}>
                     <Image 
                         src={sponsor.logo}
@@ -32,6 +31,7 @@ const SectionSponsor = () => {
         <div className="py-8 text-center">
           <FillButton title="devenir sponsor" />
           </div>
+    </div>
     </div>
 }
 

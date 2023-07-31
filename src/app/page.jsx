@@ -28,7 +28,6 @@ export default function Home() {
     <Sectionheader target={'2023-08-25T07:59:59'}/>
     <SectionAbout />
     <SectionSponsor />
-    <SectionGallery/>
     <SectionContact />
   </div>
 

@@ -7,7 +7,7 @@ import { FillButton } from "../Button";
 const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: "--font-anton" })
 const SectionSponsor = () => {
     return <div className="bg-dark">
-        <div id="sponsor" className="h-fit md:py-32 w-11/12 md:w-10/12 mx-auto ">
+        <div id="sponsor" className="h-fit py-20  my-20 md:py-32 w-11/12 md:w-10/12 mx-auto ">
             <Heading>
                 <h3 className="text-center text-white">
                     Sponsors

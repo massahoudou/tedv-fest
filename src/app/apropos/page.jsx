@@ -36,14 +36,13 @@ const About = () => {
                 </div>
                 <div className="  w-full lg:w-8/12 text-xl pt-10  md:py-0 ">
                     <Heading>
-                        <div className=" text-transparent uppercase  text-2xl  md:text-3xl bg-clip-text bg-gradient-to-r from-green-500 to-blue-300" data-aos="fade-up" data-aos-delay="200">
+                        <div className=" text-transparent uppercase  mb-10 text-2xl  md:text-3xl bg-clip-text bg-gradient-to-r from-green-500 to-blue-300" data-aos="fade-up" data-aos-delay="200">
                             DATE : 25 et 26 Août 2023
                         </div>
                     </Heading>
                     <div data-aos="fade-up" data-aos-delay="300">
-                        <h2 className={` underline font-bold my-5 lg:text-4xl`}>Theme </h2>
-                        <p className="md:text-4xl">
-                            Transformation numérique : alliée du développement durable
+                        <p className="md:text-4xl font-semibold">
+                          La transformation numérique : alliée du développement durable.
                         </p>
                     </div>
                 </div>
@@ -147,7 +146,6 @@ const About = () => {
           
         </section>
         
-        <SectionGallery />
         <SectionContact />
 
     </>

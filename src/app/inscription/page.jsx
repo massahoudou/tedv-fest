@@ -15,23 +15,22 @@ const SignUp = () => {
     <Navbar />
     <header className="bg-dark overflow-hidden text-white lg:h-[40rem]  relative ">
             <div className="flex flex-wrap   lg:flex-nowrap lg:w-10/12 w-11/12 mx-auto md:gap-8  py-20 lg:h-full items-center relative z-20 ">
-                <div className=" w-full h-fit pt-10 md:p-0   lg:w-4/12">
+                <div className=" w-full h-fit pt-10 md:p-0   lg:w-5/12">
                     <Heading>
                         <h1 className=" py-2 lg:p-0 md:mb-4 md:text-left text-white">
                         Inscription au Tdev Festival <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-secondary from-20% to-primary to-70% '>2023</span>
                         </h1>
                     </Heading>
                 </div>
-                <div className="  w-full lg:w-8/12 text-xl pt-10  md:py-0 ">
+                <div className="  w-full lg:w-7/12 text-xl pt-10  md:py-0 ">
                     <Heading>
-                        <div className=" text-transparent uppercase  text-2xl  md:text-3xl bg-clip-text bg-gradient-to-r from-green-500 to-blue-300" data-aos="fade-up" data-aos-delay="200">
+                        <div className=" text-transparent uppercase  text-2xl mb-10  md:text-3xl bg-clip-text bg-gradient-to-r from-green-500 to-blue-300" data-aos="fade-up" data-aos-delay="200">
                             DATE : 25 et 26 Août 2023
                         </div>
                     </Heading>
                     <div data-aos="fade-up" data-aos-delay="300">
-                        <h2 className={` underline font-bold my-5 lg:text-4xl`}>Theme </h2>
-                        <p className="md:text-4xl">
-                            Transformation numérique : alliée du développement durable
+                        <p className="md:text-4xl font-semibold">
+                          La transformation numérique : alliée du développement durable.
                         </p>
                     </div>
                 </div>

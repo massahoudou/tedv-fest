@@ -72,11 +72,11 @@ export const Sectionheader = ({ target }) => {
         <div className=' items-start justify-between  lg:items-baseline flex lg:flex-wrap h-full  md:w-full md:h-full lg:h-fit  gap-5  w-full lg:w-fit lg:gap-10  '>
           <div className="flex lg:gap-10 gap-5 justify-evenly lg:justify-center w-full">
             <TimeCard  first={true} time={days} title={"Jours"} delay={300}  translate={true}/>
-            <TimeCard time={hours} title={"heurs"} delay={400} />
+            <TimeCard time={hours} title={"Heures"} delay={400} />
           </div>
           <div className="flex lg:gap-10 gap-5  justify-evenly y lg:justify-center w-full">
             <TimeCard translate={true} time={minutes} title={"Minutes"} delay={500} />
-            <TimeCard time={seconds} title={"Second"} delay={600} />
+            <TimeCard time={seconds} title={"Secondes"} delay={600} />
           </div>
 
 

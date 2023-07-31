@@ -1,8 +1,8 @@
 import Link from "next/link";
-export const FillButton = ({ title, href = "#" }) => {
+export const FillButton = ({ title, href = "#" , target=""}) => {
     return (
         <div data-aos="fade-up" data-aos-delay="200">
-            <Link href={href} passHref className=" btn btn-primary hover:bg-secondary hover:scale-105  duration-100 font-semibold" >
+            <Link target={target} href={href} passHref className=" btn btn-primary hover:bg-secondary hover:scale-105  duration-100 font-semibold" >
                 <span className=" ">{title}</span>
             </Link>
         </div>
@@ -10,7 +10,7 @@ export const FillButton = ({ title, href = "#" }) => {
 };
 
 
-export const OutlineButton = ({ title, href = "#" }) => {
+export const OutlineButton = ({ title, href = "#" ,}) => {
 
     return (
         <div data-aos="fade-up" data-aos-delay="400">

@@ -29,7 +29,7 @@ const SectionSponsor = () => {
 
         </div>
         <div className="py-8 text-center">
-          <FillButton title="devenir sponsor" />
+          <FillButton title="devenir sponsor" href="https://bit.ly/appel-sponsors-tdevfest23" target="_blank" />
           </div>
     </div>
     </div>

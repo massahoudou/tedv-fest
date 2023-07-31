@@ -25,9 +25,7 @@ const SectionGallery = () => {
             
         </div>
 
-        <div className="flex  justify-center">
-            <FillButton title="Voir plus "/>
-        </div>
+       
     </div>
 
 }

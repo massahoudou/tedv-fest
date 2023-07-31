@@ -31,13 +31,12 @@ const Merci = () => {
                     </Heading>
                     <div data-aos="fade-up" data-aos-delay="300">
                         <p className="md:text-xl font-medium">
-                        Chers <span className="text-primary font-semibold"> participants </span> du Festival TDev,
-
-Nous souhaitons exprimer notre profonde gratitude pour votre inscription enthousiaste au Festival TDev de cette année ! Votre présence et participation rendront cet événement inoubliable et inspirant pour toute notre communauté.
+                        Cher(e) <span className="text-primary font-semibold"> participant(e) </span> du TDEV Festival, nous vous remercions pour votre inscription! Un email vous sera envoyé pour confirmer votre participation.
+Votre présence et participation rendront cet événement inoubliable et inspirant pour toute notre communauté.
                         </p>
                         <div className="mt-10"></div>
                         <div className="text-sm">
-                        <FillButton href="#contact"  title="Nous Contacter"/>     
+                        <FillButton href="mailto:contact@ourtdev.com"  title="Nous Contacter"/>     
                         </div>
                                         
                     </div>

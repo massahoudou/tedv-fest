@@ -7,7 +7,7 @@ const SectionGallery = () => {
     return <div id="gallery" className="h-fit py-20 w-11/12 md:w-10/12 mx-auto ">
         <h3 className="text-center">
             <Heading>
-                Gallery
+                Galeries
             </Heading>
         </h3>
         <div className="flex flex-wrap gap-10 justify-center items-center py-20 ">

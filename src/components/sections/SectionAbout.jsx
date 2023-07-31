@@ -28,7 +28,7 @@ const SectionAbout = () => {
                 Bienvenue sur le site du TDEV Festival, un événement passionnant mettant en lumière la synergie entre la transformation numérique et le développement durable. Notre thème central, &quot;Transformation numérique : alliée du développement durable&quot;, explore les nombreuses façons dont la révolution numérique peut contribuer à un avenir plus durable. Nous vous invitons à rejoindre cette initiative inspirante et à découvrir comment le numérique peut être un moteur essentiel du progrès écologique et social.
                 </p>
                 <div className='flex  items-center justify-start py-3 '>
-                    <FillButton title="Incription" href="/signup" />
+                    <FillButton title="Incription" href="/inscription" />
                     <OutlineButton href="/about" title="Apprendre plus " />
                 </div>
             </div>

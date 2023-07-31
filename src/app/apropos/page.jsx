@@ -28,7 +28,7 @@ const About = () => {
                 <div className=" w-full h-fit pt-10 md:p-0   lg:w-4/12">
                     <Heading>
                         <h1 className=" py-2 lg:p-0 md:mb-4 md:text-left text-white">
-                            A propos
+                            À propos
                         </h1>
                     </Heading>
 
@@ -53,7 +53,7 @@ const About = () => {
         </header>
         <section className="py-20 lg:my-10  md:py-10 lg:py-0  lg:h-[30vw] lg:w-10/12 w-11/12 flex md:items-center  flex-col mx-auto justify-start md:justify-center">
             <Heading>
-                <h3 className=" py-2 lg:p-0 md:mb-4">Qui somme nous </h3>
+                <h3 className=" py-2 lg:p-0 md:mb-4">Qui sommes-nous </h3>
             </Heading>
 
             <p className=" text-gray-800 w-full lg:w-7/12 text-left  py-3 lg:py-5 mb-3  md:text-center" dat-aos="fade-up" data-aos-="100">
@@ -84,7 +84,7 @@ const About = () => {
                         <strong>L&apos;objectif</strong> de ce projet est d&apos;explorer comment la transformation numérique peut être
                         utilisée pour promouvoir le développement durable. Plus précisément, nous visons à :
                     </p>
-                    <ul className="lg:py-5">
+                    <ul className=" py-3 lg:py-8">
                         {Objects.map((o, key) => {
                             return <li key={key} className="flex gap-3 py-3   " data-aos="fade-up" data-aos-delay="100">
                                 <span className="text-primary">

@@ -54,7 +54,7 @@ export const Sectionheader = ({ target }) => {
       <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
-          <h1 data-aos="zoom-out-up" data-aos-delay="" className={` ${anton.className} text-5xl  md:text-8xl lg:text-[9rem]   py-2 lg:p-0 md:mb-4`}>
+          <h1 data-aos="zoom-out-up" data-aos-delay="" className={` ${anton.className} text-5xl  md:text-8xl lg:text-[8.6rem]   py-2 lg:p-0 md:mb-4`}>
             TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-secondary from-20% to-primary to-70% '>2023</span>
           </h1>
           <p
@@ -63,7 +63,7 @@ export const Sectionheader = ({ target }) => {
             Découvrez le TDEV Festival, l&apos;événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable.
           </p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
-            <FillButton href="/signup" title="Incription " />
+            <FillButton href="/inscription" title="Incription " />
             <OutlineButton href="#about" title="Apprendre plus" />
 
           </div>
@@ -94,7 +94,7 @@ export const Sectionheader = ({ target }) => {
       <div data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom" className='w-fit  flex  mx-auto absolute bottom-0 left-0 right-0'>
         <div className='flex flex-col items-center my-2 animate-bounce'>
           <span className="hidden lg:block">
-            Slide down
+           Glisser vers le bas
           </span>
           <svg className="hidden md:block w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
             <path fillRule="evenodd" d="M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z" clipRule="evenodd" />

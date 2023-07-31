@@ -6,7 +6,7 @@ const Links = [
  },
  {
     name: "À propos",
-    link: "/about",
+    link: "/apropos",
     deseable: false ,
  },
  {

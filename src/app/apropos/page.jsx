@@ -11,8 +11,10 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import Why from "@/data/why";
 import SectionGallery from "@/components/sections/SectionGallery";
-import Head from "next/head";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/virtual';
+import { Pagination } from 'swiper/modules';
 
 const About = () => {
     useEffect(() => {
@@ -31,7 +33,6 @@ const About = () => {
                             À propos
                         </h1>
                     </Heading>
-
                 </div>
                 <div className="  w-full lg:w-8/12 text-xl pt-10  md:py-0 ">
                     <Heading>
@@ -63,7 +64,7 @@ const About = () => {
             <FillButton title="Contacter-Nous" />
         </section>
         <section className="lg:w-10/12 w-11/12 mx-auto  relative  md:py-0  h-fit ">
-            
+
             <div className=" flex flex-wrap lg:flex-nowrap items-stretch gap-10 h-full  mx-auto  justify-center">
 
 
@@ -104,24 +105,48 @@ const About = () => {
 
 
         </section>
-        <section className="py-20  lg:my-20  lg:w-10/12 w-11/12 flex items-center flex-col mx-auto  justify-center">
+        <section className="py-20  lg:my-20  w-11/12   mx-auto ">
             <Heading>
-                <h5 className=" py-2 lg:p-0 md:mb-4 "  >Pour Quoi participer </h5>
+                <h5 className=" py-2 lg:p-0 md:mb-4 text-center"  >Pourquoi participer </h5>
             </Heading>
+                    <div className="mt-20"></div>
+            <Swiper
+                   
+                     spaceBetween={30}
+                     breakpoints={{
+                        640: {
+                          slidesPerView: 1,
+                          spaceBetween: 20,
+                        },
+                        768: {
+                          slidesPerView: 3,
+                          spaceBetween: 40,
+                        },
+                        1024: {
+                          slidesPerView: 4,
+                          spaceBetween: 50,
+                        },
+                      }}
+                     grabCursor={true}
+                     pagination={{
+                       clickable: true,
+                     }}
+                     modules={[Pagination]}
+                    className="mySwiper py-20 ">
+                    {Why.map((w, key) => {
+                        return <SwiperSlide key={key}  >
+                            <Image key={key} loading="lazy" className="object-cover" data-aos="zoom-in-right"
+                                src={w.link}
+                                width={600}
+                                height={600}
+                                alt="Tdev fest" />
+                        </SwiperSlide>
+                    })}
+                </Swiper>
 
-
-            <div className="flex  pt-10 md:pt-20 gap-10 flex-wrap md:flex-nowrap" data-aos="fade-up" data-aos-delay="">
-                {Why.map((w, key) => {
-                    return <div key={key} className="w-full lg:w-6/12  py-4 px-2    hover:shadow-sm duration-300  ">
-                        <div className="text-xl lg:text-2xl text-primary uppercase font-bold"> {w.title}</div>
-                        <p className="text-gray-800 py-2 leading-relaxed">
-                            {w.description}
-                        </p>
-                    </div>
-                })}
-
-            </div>
+          
         </section>
+        
         <SectionGallery />
         <SectionContact />
 

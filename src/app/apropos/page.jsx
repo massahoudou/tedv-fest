@@ -70,10 +70,10 @@ const About = () => {
                 <Image
                     className="w-full  lg:w-8/12 lg:h-12/12 object-cover" data-aos="zoom-in-right"
 
-                    src="/images/4.jpg"
+                    src="/images/12.jpg"
                     loading="lazy"
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                     alt="spo"
                 />
                 <div className=" my-10   md:p-0  ">

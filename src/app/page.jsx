@@ -21,6 +21,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init({
       once: true ,
+      anchorPlacement: 'top-bottom',
     }); 
   },[])
   return <div>

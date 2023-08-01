@@ -106,7 +106,7 @@ const About = () => {
         </section>
         <section className="py-20  lg:my-20  w-11/12   mx-auto ">
             <Heading>
-                <h5 className=" py-2 lg:p-0 md:mb-4 text-center"  >Pourquoi participer </h5>
+                <h5 className=" py-2 lg:p-0 md:mb-4  lg:text-center"  >Pourquoi participer </h5>
             </Heading>
                     <div className="mt-20"></div>
             <Swiper

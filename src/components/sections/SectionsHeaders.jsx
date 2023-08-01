@@ -54,7 +54,7 @@ export const Sectionheader = ({ target }) => {
       <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
-          <h1 data-aos="zoom-out-up" data-aos-delay="" className={` ${anton.className} text-5xl  md:text-8xl lg:text-[8.6rem]   py-2 lg:p-0 md:mb-4`}>
+          <h1 data-aos="zoom-out-up" data-aos-delay="" className={` ${anton.className} text-5xl  md:text-8xl  lg:text-[8.6rem]   py-2 lg:p-0 md:mb-4`}>
             TDEV FESTIVAL <span className='bg-gradient-text bg-clip-text text-transparent bg-gradient-to-br from-secondary from-20% to-primary to-70% '>2023</span>
           </h1>
           <p

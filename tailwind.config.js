@@ -21,7 +21,8 @@ module.exports = {
         'secondary' : '#4cd436',
         'third' : '#b3fc01',
         'dark': '#030212',
-        'dark-grey': '#606060'
+        'dark-grey': '#606060',
+        'dark-grey-second': '#ecfbf3'
       },
       keyframes: {
         wiggle: {

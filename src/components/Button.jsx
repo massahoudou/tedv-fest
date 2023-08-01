@@ -1,11 +1,14 @@
+"use client"
 import Link from "next/link";
+import { motion } from "framer-motion";
 export const FillButton = ({ title, href = "#" , target=""}) => {
     return (
-        <div data-aos="fade-up" data-aos-delay="200">
-            <Link target={target} href={href} passHref className=" btn btn-primary hover:bg-secondary hover:scale-105  duration-100 font-semibold" >
+        <motion.div     whileHover={{ scale: 0.9 }}
+        whileTap={{ scale: 0.9 }} data-aos="fade-up" data-aos-delay="200">
+            <Link target={target} href={href} passHref className=" btn btn-primary hover:bg-secondary duration-200 font-semibold" >
                 <span className=" ">{title}</span>
             </Link>
-        </div>
+        </motion.div>
     );
 };
 

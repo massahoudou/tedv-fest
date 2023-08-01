@@ -47,7 +47,7 @@ Votre présence et participation rendront cet événement inoubliable et inspira
             </div>
         </header>
 
-  
+  <SectionContact isBlured={false}/>
   </div>
 
 }

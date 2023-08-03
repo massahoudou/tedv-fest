@@ -14,7 +14,6 @@ import SectionContact from "@/components/sections/SectionContact";
 const About = () => {
     return <>
         <Navbar />
-
         <header className="bg-dark overflow-hidden text-white lg:h-[40rem]  relative ">
             <div className="flex flex-wrap   lg:flex-nowrap lg:w-10/12 w-11/12 mx-auto md:gap-8  py-20 lg:h-full items-center relative z-20 ">
                 <div className=" w-full h-fit pt-10 md:p-0   lg:w-4/12">

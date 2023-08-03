@@ -13,14 +13,11 @@ import SectionProgram from '@/components/sections/SectionProgram';
 import { Anton } from 'next/font/google';
 import { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Head from 'next/head';
-import SectionGallery from '@/components/sections/SectionGallery';
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      disable: true,
+      startEvent: 'load', 
       once: true ,
       anchorPlacement: 'top-bottom',
     }); 

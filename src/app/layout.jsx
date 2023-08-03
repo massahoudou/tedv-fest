@@ -2,7 +2,7 @@
 import './globals.css'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import Script from 'next/script'
-import './aos.css'
+
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'],weight: ['400' ,'600' , '800'] })
 
 
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr"> 
      
-      <body className={`${jakarta.className} overflow-x-hidden  `} >
+      <body className={`${jakarta.className} `} >
 
         {children}
         </body>

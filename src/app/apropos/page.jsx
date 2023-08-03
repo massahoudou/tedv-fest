@@ -42,7 +42,7 @@ const About = () => {
                     </Heading>
                     <div data-aos="fade-up" data-aos-delay="300">
                         <p className="md:text-4xl font-semibold">
-                          La transformation numérique : alliée du développement durable.
+                            La transformation numérique : alliée du développement durable.
                         </p>
                     </div>
                 </div>
@@ -56,11 +56,13 @@ const About = () => {
                 <h3 className=" py-2 lg:p-0 md:mb-4">Qui sommes-nous </h3>
             </Heading>
 
-            <p className=" text-gray-800 w-full lg:w-7/12 text-left  py-3 lg:py-5 mb-3  md:text-center" data-aos="fade-up" data-aos-="100">
-                <strong>
-                    TDEV (Togo Developers)</strong> est une communauté technologique établie au Togo en octobre 2020. Son objectif est de combler le manque de ressources éducatives dans le domaine de l&apos;informatique pour les jeunes togolais passionnés par la technologie. Grâce à des programmes de bourses, des sessions de codage, des compétitions, des conférences et des opportunités de mentorat, TDEV offre aux jeunes âgés de 16 à 35 ans l&apos;occasion de développer leurs compétences numériques et de se préparer aux métiers du numérique. En mettant l&apos;accent sur l&apos;inclusion et en favorisant la diversité des profils, TDEV contribue activement à renforcer l&apos;écosystème technologique togolais en formant la prochaine génération de professionnels du numérique compétents et talentueux.            </p>
+            <p className=" text-gray-800 w-full lg:w-7/12 text-left  py-3 lg:py-5 mb-3 leading-relaxed  md:text-center" data-aos="fade-up" data-aos-="100">
+                TDEV (Togo Developers) est une communauté technologique établie au Togo en octobre 2020. Son objectif est de combler le manque de ressources éducatives dans le domaine de l&apos;informatique pour les jeunes togolais passionnés par la technologie. Et cela par  des programmes de bourses, des sessions de codage, des compétitions, des conférences et des opportunités de mentorat.
+                <br />
+                TDEV propose aux jeunes âgés de 16 à 35 ans une opportunité de perfectionner leur expertise dans le domaine de la technologie tout en se préparant aux carrières de l&apos;ère digitale. Avec une optique axée sur le partage de notions et la valorisation de diverses compétences, TDEV joue un rôle actif dans le renforcement de l&apos;écosystème technologique du Togo en formant la future génération de professionnels qualifiés et prometteurs pour les défis numériques de demain.
+            </p>
 
-            <FillButton title="Contacter-Nous" />
+            <FillButton title="Contactez-Nous" />
         </section>
         <section className="lg:w-10/12 w-11/12 mx-auto  relative  md:py-0  h-fit ">
 
@@ -108,44 +110,44 @@ const About = () => {
             <Heading>
                 <h5 className=" py-2 lg:p-0 md:mb-4  lg:text-center"  >Pourquoi participer </h5>
             </Heading>
-                    <div className="mt-20"></div>
+            <div className="mt-20"></div>
             <Swiper
-                   
-                     spaceBetween={30}
-                     breakpoints={{
-                        640: {
-                          slidesPerView: 1,
-                          spaceBetween: 20,
-                        },
-                        768: {
-                          slidesPerView: 3,
-                          spaceBetween: 40,
-                        },
-                        1024: {
-                          slidesPerView: 4,
-                          spaceBetween: 50,
-                        },
-                      }}
-                     grabCursor={true}
-                     pagination={{
-                       clickable: true,
-                     }}
-                     modules={[Pagination]}
-                    className="mySwiper py-20 ">
-                    {Why.map((w, key) => {
-                        return <SwiperSlide key={key}  >
-                            <Image key={key} loading="lazy" className="object-cover" data-aos="zoom-in-right"
-                                src={w.link}
-                                width={600}
-                                height={600}
-                                alt="Tdev fest" />
-                        </SwiperSlide>
-                    })}
-                </Swiper>
 
-          
+                spaceBetween={30}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                }}
+                grabCursor={true}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper py-20 ">
+                {Why.map((w, key) => {
+                    return <SwiperSlide key={key}  >
+                        <Image key={key} loading="lazy" className="object-cover" data-aos="zoom-in-right"
+                            src={w.link}
+                            width={600}
+                            height={600}
+                            alt="Tdev fest" />
+                    </SwiperSlide>
+                })}
+            </Swiper>
+
+
         </section>
-        
+
         <SectionContact />
 
     </>

@@ -20,6 +20,7 @@ import SectionGallery from '@/components/sections/SectionGallery';
 export default function Home() {
   useEffect(() => {
     AOS.init({
+      disable: true,
       once: true ,
       anchorPlacement: 'top-bottom',
     }); 

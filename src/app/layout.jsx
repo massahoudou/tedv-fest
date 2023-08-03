@@ -40,7 +40,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr"> 
       <body className={`${jakarta.className} overflow-x-hidden  `} >
-      
         {children}
         </body>
     </html>

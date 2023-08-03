@@ -8,14 +8,16 @@ const SectionAbout = () => {
     return <div id="about" className="w-11/12 h-fit lg:h-screen md:w-10/12 lg:gap-10  mx-auto flex flex-wrap lg:flex-nowrap items-center ">
             <div className="flex flex-row-reverse lg:flex-row w-full lg:w-3/6 gap-5  h-72  my-10 lg:h-4/6  ">
                 <div className="flex flex-col gap-5 w-3/6 lg:items-end">
-                    <div    data-aos="zoom-out-up" data-aos-delay="" className="bg-cover bg-center bg-[url(/images/10.JPG)] w-full md:w-5/6 h-3/6 ">
+                    <div    data-aos="zoom-out-up" data-aos-delay="" className=" w-full md:w-5/6 h-3/6 ">
+                        <Image className="w-full h-full object-cover " src="/images/10.JPG" laoding="lazy"width={600} height={600} alt="tdev festival"/>
                     </div>
-                    <div   data-aos="zoom-out-up" data-aos-delay="100" className="bg-cover bg-right-top bg-[url(/images/7.jpeg)] w-full md:w-4/6  h-3/6 ">
+                    <div   data-aos="zoom-out-up" data-aos-delay="100" className="  w-full md:w-4/6  h-3/6 ">
+                    <Image className="w-full h-full object-cover " src="/images/7.jpeg" laoding="lazy"width={600} height={600} alt="tdev festival"/>
                     </div>
                 </div>
-                <div   data-aos="zoom-out-up" data-aos-delay="200" className=" bg-cover bg-top bg-[url(/images/16.jpg)] w-3/6 h-full ">
+                <div   data-aos="zoom-out-up" data-aos-delay="200" className="   w-3/6 h-full ">
+                <Image className="w-full h-full object-cover " src="/images/16.jpg" laoding="lazy" width={600} height={600} alt="tdev festival"/>
                 </div>
-                
                 
             </div>
             <div className=" lg:text-left  lg:h-4/6 w-full lg:w-3/6 lg:pt-16">

@@ -2,26 +2,15 @@
 import { FillButton } from "@/components/Button";
 import Heading from "@/components/Heading";
 import Navbar from "@/components/Navbar";
-import SmallHeading from "@/components/SmallHeading";
-import SectionContact from "@/components/sections/SectionContact";
-import { Anton } from 'next/font/google'
 import Image from "next/image";
 import Objects from "@/data/Objects";
-import { useEffect } from 'react';
-import AOS from 'aos';
 import Why from "@/data/why";
-import SectionGallery from "@/components/sections/SectionGallery";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/virtual';
 import { Pagination } from 'swiper/modules';
 
 const About = () => {
-    useEffect(() => {
-        AOS.init({
-            once: true,
-        });
-    }, [])
     return <>
         <Navbar />
 
@@ -47,7 +36,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className={`bg-[url(/images/tdev.png)] bg-no-repeat bg-contain  h-[35rem] w-[35rem] md:opacity-80 opacity-30  blur-[60px] scale-125  absolute top-20  -left-24`}>
+            <div className={`bg-[url(/images/logo.png)] bg-no-repeat bg-contain  h-[35rem] w-[35rem] md:opacity-80 opacity-30  blur-[60px] scale-125  absolute top-20  -left-24`}>
 
             </div>
         </header>
@@ -71,7 +60,6 @@ const About = () => {
 
                 <Image
                     className="w-full  lg:w-8/12 lg:h-12/12 object-cover" data-aos="zoom-in-right"
-
                     src="/images/12.jpg"
                     loading="lazy"
                     width={600}

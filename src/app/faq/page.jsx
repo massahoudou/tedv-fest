@@ -11,7 +11,7 @@ export const metadata = {
   }
 const Faq = () => {
     const faqItems = [
-        {id:1, question: "Add commonly asked questions here", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem quilectus molestie malesuada vitae vel purus.", isOpen: false },
+        {id:1, question: "Votre question ici", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem quilectus molestie malesuada vitae vel purus.", isOpen: false },
         {id:2 , question: "Add commonly asked questions here", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem quilectus molestie malesuada vitae vel purus.", isOpen: false },
         {id:3, question: "Add commonly asked questions here", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem quilectus molestie malesuada vitae vel purus.", isOpen: false },
     ];

@@ -51,7 +51,7 @@ export const Sectionheader = ({ target }) => {
   return <>
     <Navbar black={false} />
     <header id="header" className='pt-20 md:p-0 bg-dark flex items-center   text-white h-screen relative overflow-hidden'>
-      <div className='w-11/12 md:w-10/12 mx-auto  h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
+      <div className='w-11/12 md:w-10/12 mx-auto md:mt-12   h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
           <h1 data-aos="zoom-out-up" data-aos-delay="" className={` ${anton.className} text-5xl  md:text-8xl  lg:text-[8.6rem]   py-2 lg:p-0 md:mb-4`}>
@@ -71,12 +71,12 @@ export const Sectionheader = ({ target }) => {
         </div>
         <div className=' items-start justify-between  lg:items-baseline flex lg:flex-wrap h-full  md:w-full md:h-full lg:h-fit  gap-5  w-full lg:w-fit lg:gap-10  '>
           <div className="flex lg:gap-10 gap-5 justify-evenly lg:justify-center w-full">
-            <TimeCard  first={true} time={days} title={"Jours"} delay={300}  translate={true}/>
-            <TimeCard time={hours} title={"Heures"} delay={400} />
+            <TimeCard  first={true} time={days} title={"Jours"} delay={500}  translate={true}/>
+            <TimeCard time={hours} title={"Heures"} delay={600} />
           </div>
           <div className="flex lg:gap-10 gap-5  justify-evenly y lg:justify-center w-full">
-            <TimeCard translate={true} time={minutes} title={"Minutes"} delay={500} />
-            <TimeCard time={seconds} title={"Secondes"} delay={600} />
+            <TimeCard translate={true} time={minutes} title={"Minutes"} delay={700} />
+            <TimeCard time={seconds} title={"Secondes"} delay={800} />
           </div>
 
 
@@ -91,8 +91,8 @@ export const Sectionheader = ({ target }) => {
       <div className={`bg-[url(/images/logo.png)] bg-no-repeat bg-contain h-[50rem] w-[50rem] lg:h-[90rem] lg:w-[90rem] -left-[27rem] lg:-left-[40rem]  blur-[150px] opacity-40 absolute -top-72`}>
 
       </div>
-      <div data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom" className='w-fit  flex  mx-auto absolute bottom-0 left-0 right-0'>
-        <div className='flex flex-col items-center my-2 animate-bounce'>
+      <div data-aos="fade-up" data-aos-delay="900" data-aos-anchor-placement="top-bottom" className='w-fit  flex  mx-auto absolute bottom-0 left-0 right-0'>
+        <div className='flex flex-col items-center my-2 animate-bounce '>
           <span className="hidden lg:block">
            Glisser vers le bas
           </span>

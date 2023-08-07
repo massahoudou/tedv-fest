@@ -84,12 +84,12 @@ const SectionContact = ({isBlured = true }) => {
             </div>
 
         </div>
-      <div className={`bg-[url(/images/tdev.png)]  bg-no-repeat bg-contain h-[35rem] w-[35rem]  right-10  blur-3xl  absolute  top-10 md:-top-2 opacity-30 `}>
+      <div className={`bg-[url(/images/logo.png)]  bg-no-repeat bg-contain h-[35rem] w-[35rem]  right-10  blur-3xl  absolute  top-10 md:-top-2 opacity-30 `}>
 
             </div> 
        
         {
-            isBlured ?  <div className={`bg-[url(/images/tdev.png)] bg-no-repeat bg-contain h-[50rem] w-[50rem] lg:h-[90rem] lg:w-[90rem] -left-[27rem] lg:-left-[40rem]  blur-[150px] opacity-30 absolute -top-72`}>
+            isBlured ?  <div className={`bg-[url(/images/logo.png)] bg-no-repeat bg-contain h-[50rem] w-[50rem] lg:h-[90rem] lg:w-[90rem] -left-[27rem] lg:-left-[40rem]  blur-[150px] opacity-30 absolute -top-72`}>
 
             </div> : <></>
         }

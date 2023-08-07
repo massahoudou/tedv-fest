@@ -2,29 +2,18 @@
 import { FillButton } from "@/components/Button";
 import Heading from "@/components/Heading";
 import Navbar from "@/components/Navbar";
-import SmallHeading from "@/components/SmallHeading";
-import SectionContact from "@/components/sections/SectionContact";
-import { Anton } from 'next/font/google'
 import Image from "next/image";
 import Objects from "@/data/Objects";
-import { useEffect } from 'react';
-import AOS from 'aos';
 import Why from "@/data/why";
-import SectionGallery from "@/components/sections/SectionGallery";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/virtual';
 import { Pagination } from 'swiper/modules';
+import SectionContact from "@/components/sections/SectionContact";
 
 const About = () => {
-    useEffect(() => {
-        AOS.init({
-            once: true,
-        });
-    }, [])
     return <>
         <Navbar />
-
         <header className="bg-dark overflow-hidden text-white lg:h-[40rem]  relative ">
             <div className="flex flex-wrap   lg:flex-nowrap lg:w-10/12 w-11/12 mx-auto md:gap-8  py-20 lg:h-full items-center relative z-20 ">
                 <div className=" w-full h-fit pt-10 md:p-0   lg:w-4/12">
@@ -42,12 +31,12 @@ const About = () => {
                     </Heading>
                     <div data-aos="fade-up" data-aos-delay="300">
                         <p className="md:text-4xl font-semibold">
-                          La transformation numérique : alliée du développement durable.
+                            La transformation numérique : alliée du développement durable.
                         </p>
                     </div>
                 </div>
             </div>
-            <div className={`bg-[url(/images/tdev.png)] bg-no-repeat bg-contain  h-[35rem] w-[35rem] md:opacity-80 opacity-30  blur-[60px] scale-125  absolute top-20  -left-24`}>
+            <div className={`bg-[url(/images/logo.png)] bg-no-repeat bg-contain  h-[35rem] w-[35rem] md:opacity-80 opacity-30  blur-[60px] scale-125  absolute top-20  -left-24`}>
 
             </div>
         </header>
@@ -56,11 +45,13 @@ const About = () => {
                 <h3 className=" py-2 lg:p-0 md:mb-4">Qui sommes-nous </h3>
             </Heading>
 
-            <p className=" text-gray-800 w-full lg:w-7/12 text-left  py-3 lg:py-5 mb-3  md:text-center" data-aos="fade-up" data-aos-="100">
-                <strong>
-                    TDEV (Togo Developers)</strong> est une communauté technologique établie au Togo en octobre 2020. Son objectif est de combler le manque de ressources éducatives dans le domaine de l&apos;informatique pour les jeunes togolais passionnés par la technologie. Grâce à des programmes de bourses, des sessions de codage, des compétitions, des conférences et des opportunités de mentorat, TDEV offre aux jeunes âgés de 16 à 35 ans l&apos;occasion de développer leurs compétences numériques et de se préparer aux métiers du numérique. En mettant l&apos;accent sur l&apos;inclusion et en favorisant la diversité des profils, TDEV contribue activement à renforcer l&apos;écosystème technologique togolais en formant la prochaine génération de professionnels du numérique compétents et talentueux.            </p>
+            <p className=" text-gray-800 w-full lg:w-7/12 text-left  py-3 lg:py-5 mb-3 leading-relaxed  md:text-center" data-aos="fade-up" data-aos-="100">
+                TDEV (Togo Developers) est une communauté technologique établie au Togo en octobre 2020. Son objectif est de combler le manque de ressources éducatives dans le domaine de l&apos;informatique pour les jeunes togolais passionnés par la technologie. Et cela par  des programmes de bourses, des sessions de codage, des compétitions, des conférences et des opportunités de mentorat.
+                <br />
+                TDEV propose aux jeunes âgés de 16 à 35 ans une opportunité de perfectionner leur expertise dans le domaine de la technologie tout en se préparant aux carrières de l&apos;ère digitale. Avec une optique axée sur le partage de notions et la valorisation de diverses compétences, TDEV joue un rôle actif dans le renforcement de l&apos;écosystème technologique du Togo en formant la future génération de professionnels qualifiés et prometteurs pour les défis numériques de demain.
+            </p>
 
-            <FillButton title="Contacter-Nous" />
+            <FillButton title="Contactez-Nous" />
         </section>
         <section className="lg:w-10/12 w-11/12 mx-auto  relative  md:py-0  h-fit ">
 
@@ -69,7 +60,6 @@ const About = () => {
 
                 <Image
                     className="w-full  lg:w-8/12 lg:h-12/12 object-cover" data-aos="zoom-in-right"
-
                     src="/images/12.jpg"
                     loading="lazy"
                     width={600}
@@ -108,44 +98,44 @@ const About = () => {
             <Heading>
                 <h5 className=" py-2 lg:p-0 md:mb-4  lg:text-center"  >Pourquoi participer </h5>
             </Heading>
-                    <div className="mt-20"></div>
+            <div className="mt-20"></div>
             <Swiper
-                   
-                     spaceBetween={30}
-                     breakpoints={{
-                        640: {
-                          slidesPerView: 1,
-                          spaceBetween: 20,
-                        },
-                        768: {
-                          slidesPerView: 3,
-                          spaceBetween: 40,
-                        },
-                        1024: {
-                          slidesPerView: 4,
-                          spaceBetween: 50,
-                        },
-                      }}
-                     grabCursor={true}
-                     pagination={{
-                       clickable: true,
-                     }}
-                     modules={[Pagination]}
-                    className="mySwiper py-20 ">
-                    {Why.map((w, key) => {
-                        return <SwiperSlide key={key}  >
-                            <Image key={key} loading="lazy" className="object-cover" data-aos="zoom-in-right"
-                                src={w.link}
-                                width={600}
-                                height={600}
-                                alt="Tdev fest" />
-                        </SwiperSlide>
-                    })}
-                </Swiper>
 
-          
+                spaceBetween={30}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                }}
+                grabCursor={true}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper py-20 ">
+                {Why.map((w, key) => {
+                    return <SwiperSlide key={key}  >
+                        <Image key={key} loading="lazy" className="object-cover" data-aos="zoom-in-right"
+                            src={w.link}
+                            width={600}
+                            height={600}
+                            alt="Tdev fest" />
+                    </SwiperSlide>
+                })}
+            </Swiper>
+
+
         </section>
-        
+
         <SectionContact />
 
     </>

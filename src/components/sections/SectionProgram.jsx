@@ -247,9 +247,9 @@ const SectionProgram = () => {
             </Heading>
         </h5>
         <div  data-aos="fade-up" daa-aos-delay="200" className="flex justify-center ">
-            <div className=" text-gray-700 md:text-xl mt-5  font-semibold">
+            <div className=" text-gray-700 md:text-xl mt-5  ">
                 vous pouvez télécharger la version  numerique(pdf) du  programme en  
-                <Link target="_blank" href="./files/PROGRAMME-DU-TDEV-FESTIVAL-2023.pdf" passHref className="text-primary" >
+                <Link  target="_blank" href="./files/PROGRAMME-DU-TDEV-FESTIVAL-2023.pdf" passHref className="text-primary font-semibold hover:text-third" >
                 <span className=" ">  Cliquant ici  </span>
             </Link>
             </div>

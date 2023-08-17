@@ -4,8 +4,9 @@ import SectionAbout from '@/components/sections/SectionAbout'
 import SectionContact from '@/components/sections/SectionContact'
 import SectionSponsor from '@/components/sections/SectionSponsor'
 import { Sectionheader } from '@/components/sections/SectionsHeaders'
-import { useEffect } from 'react';
-import AOS from 'aos';
+import SectionProgram  from '@/components/sections/SectionProgram'
+import { useEffect } from 'react';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+import AOS from 'aos';                                                                                                                                                                                                                                                                                                                                                                                                  
 
 export default function Home() {
   useEffect(() => {
@@ -19,7 +20,9 @@ export default function Home() {
 
     <Sectionheader target={'2023-08-25T07:59:59'}/>
     <SectionAbout />
+    <SectionProgram/>
     <SectionSponsor />
+
     <SectionContact />
   </div>
 

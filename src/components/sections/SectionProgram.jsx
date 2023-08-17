@@ -12,7 +12,7 @@ const SectionProgram = () => {
     const [items, setItems] = useState([
         {
             id: 1,
-            title: "Première jour",
+            title: "Premier jour",
             date: "25 AOUT 2023",
             active: true,
             content: [
@@ -126,7 +126,7 @@ const SectionProgram = () => {
         },
         {
             id: 2,
-            title: "deuxieme jour",
+            title: "deuxième jour",
             date: "26 AOUT 2023",
             active: false,
             content: [
@@ -241,7 +241,7 @@ const SectionProgram = () => {
 
 
     return <div id="program" className="h-fit  py-20 w-11/12 md:w-10/12  mx-auto ">
-        <h5 className="text-7xl lg:text-[8rem] uppercase text-center">
+        <h5 className="text-7xl lg:text-[8rem] uppercase text-left md:text-center">
             <Heading>
                 Programmes
             </Heading>

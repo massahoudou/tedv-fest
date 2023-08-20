@@ -71,7 +71,7 @@ const Navbar = ({ black }) => {
                                     </li>
                             })}
                             <li>
-                                <FillButton href="/merci" title="S'inscrire maintenant " />
+                                <FillButton href="/inscription" title="S'inscrire maintenant " />
                             </li>
                         </ul>
 
@@ -109,7 +109,7 @@ const Navbar = ({ black }) => {
                         </ul>
                     </div>
                     <div className="text-white   w-fit">
-                        <FillButton href="/merci" title="Inscription " />
+                        <FillButton href="/inscription" title="Inscription " />
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Heading from "@/components/Heading";
 import Link from "next/link";
 import HubSpot from "@/components/HubSpot";
+import { redirect } from "next/navigation";
 
 export const metadata = {
   title: "TDEV Festival - Inscription",
@@ -11,6 +12,7 @@ export const metadata = {
 }
 
 const SignUp = () => {
+  redirect('/merci')
   return <div>
     <Navbar />
     <header className="bg-dark overflow-hidden text-white lg:h-[40rem]  relative ">

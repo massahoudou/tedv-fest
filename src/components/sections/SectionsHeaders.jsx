@@ -63,7 +63,7 @@ export const Sectionheader = ({ target }) => {
             Découvrez le TDEV Festival, l&apos;événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable.
           </p>
           <div className='flex justify-start items-center  py-2 md:py-3 '>
-            <FillButton href="/inscription" title="S'inscrire " />
+            <FillButton href="/merci" title="S'inscrire " />
             <OutlineButton href="#about" title="Apprendre plus" />
 
           </div>

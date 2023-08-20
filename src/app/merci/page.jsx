@@ -16,14 +16,14 @@ const Merci = () => {
     <Navbar />
     <header className="bg-dark overflow-hidden text-white h-screen  relative ">
             <div className="flex flex-wrap   lg:flex-nowrap lg:w-10/12 w-11/12 mx-auto md:gap-8  py-20 lg:h-full items-center relative z-20 ">
-                <div className=" w-full h-fit pt-10 md:p-0   lg:w-3/12">
+                <div className=" w-full h-fit pt-10 md:p-0   lg:w-6/12">
                     <Heading>
                         <h1 className=" py-2 lg:p-0 md:mb-4 md:text-left text-white">
-                       merci !
+                        Fin des Inscriptions
                         </h1>
                     </Heading>
                 </div>
-                <div className="  w-full lg:w-8/12 text-xl pt-10  md:py-0 ">
+                <div className="  w-full lg:w-7/12 text-xl pt-10  md:py-0 ">
                     <Heading>
                         <div className=" text-transparent uppercase  text-2xl mb-10  md:text-3xl bg-clip-text bg-gradient-to-r from-green-500 to-blue-300" data-aos="fade-up" data-aos-delay="200">
                             DATE : 25 et 26 Août 2023
@@ -31,8 +31,15 @@ const Merci = () => {
                     </Heading>
                     <div data-aos="fade-up" data-aos-delay="300">
                         <p className="md:text-xl font-medium">
-                        Cher(e) <span className="text-primary font-semibold"> participant(e) </span> du TDEV Festival, nous vous remercions pour votre inscription! Un email vous sera envoyé pour confirmer votre participation.
-Votre présence et participation rendront cet événement inoubliable et inspirant pour toute notre communauté.
+                       
+                        Chers passionnés de technologie et d&apos;innovation 
+                        Nous tenons à vous informer que les inscriptions pour le TDevFestival 2023 sont désormais fermées. Nous vous remercions infiniment pour l&apos;enthousiasme que vous avez envers notre événement.
+<br />
+Pour ceux qui n&apos;ont pas pu finaliser leur inscription cette fois-ci, nous devrions avoir l&apos;opportunité de vous accueillir lors de futurs événements. Restez connectés pour ne rien manquer de nos prochaines annonces.
+
+Un grand merci pour votre intérêt continue envers le TDevFestival.
+
+Cordialement, L&apos;équipe organisatrice
                         </p>
                         <div className="mt-10"></div>
                         <div className="text-sm">

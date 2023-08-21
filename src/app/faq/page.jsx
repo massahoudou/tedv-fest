@@ -101,7 +101,7 @@ const Faq = () => {
             linked: true ,
             links: [
                 {
-                    title: "Télégram",
+                    title: "Telegram",
                     link: "https://t.me/tdev228",
                 },
                 {
@@ -143,7 +143,6 @@ const Faq = () => {
 </div>
 
     </div>
-    <Link href="" className="text-semibold text-primary" passHref>localisation</Link>
     <SectionContact/>
     </>
 

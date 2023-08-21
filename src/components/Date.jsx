@@ -17,7 +17,7 @@ export const Date = () => {
             </span>
         </div>
         <div  data-aos="fade-up" data-aos-delay=""  className="uppercase text-sm  sm:text-md ">
-        VENUE : <Link passHref href="https://goo.gl/maps/GKMNterS8hLG7Y8g6 " className="text-primary animate-pulse"> ENERGY GENERATION  </Link>
+        VENUE : <Link  target="_blank" passHref href="https://goo.gl/maps/GKMNterS8hLG7Y8g6 " className="text-primary animate-pulse"> ENERGY GENERATION  </Link>
         </div>
    </div>
     </>

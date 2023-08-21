@@ -17,6 +17,9 @@ const Questions = ({ faqItems }) => {
     setItems(updatedItems);
   };
 
+  const jsonParser =  (answer) => {
+     return  JSON.parse(answer);
+  }
   return (
     <>
       {items.map((item, index) => (
@@ -60,7 +63,11 @@ const Questions = ({ faqItems }) => {
               </div>
               {item.isOpen && (
                 <p className="pt-5  transition-all duration-100 leading-relaxed" data-aos="fade-left" >
-                  {item.answer}
+
+                  <span dangerouslySetInnerHTML={{__html: item.answer}} > 
+
+                  </span>
+             
                   <br />
                   { item.linked && (
                     item.links.map((link, index )=> {

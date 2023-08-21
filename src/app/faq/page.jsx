@@ -14,7 +14,7 @@ const Faq = () => {
     const faqItems = [
         {
             id: 1,
-            question: "Quel est le thème retenu pour le TDEV Festival, édition 3 ?",
+            question: "Quel est  le thème retenu pour le TDEV Festival, édition 3 ?",
             answer: "Transformation numérique : alliée du développement durable",
             isOpen: false,
             linked: false ,
@@ -25,7 +25,7 @@ const Faq = () => {
             answer: "Les 25 et 26 Août 2023, à Energy Generation localisation ",
             linked: true ,
             links: [ {
-                title: "Localisation",
+                title: "https://goo.gl/maps/GKMNterS8hLG7Y8g6",
                 link: "https://goo.gl/maps/GKMNterS8hLG7Y8g6"
             }],
             
@@ -34,14 +34,14 @@ const Faq = () => {
         {
             id: 3,
             question: "Quels sont les objectifs ?",
-            answer: "1. Fournir une compréhension approfondie des tendances actuelles de la transformation numérique et de leur impact environnemental.\n2. Proposer des pratiques exemplaires pour intégrer le développement durable dans la transformation numérique.\n3. Créer un réseau unique et solide entre les acteurs du numérique.\n4. Renforcer les capacités des jeunes acteurs à travers des panels et des formations de groupe durant les deux jours du festival.\n5. Identifier les avantages et les défis de l'utilisation de la transformation numérique pour promouvoir le développement durable.\n6. Proposer des recommandations pratiques pour aider les entreprises à intégrer le développement durable dans leur stratégie de transformation numérique.",
+            answer: "1. Fournir une compréhension approfondie des tendances actuelles de la transformation numérique et de leur impact environnemental.<br/>2. Proposer des pratiques exemplaires pour intégrer le développement durable dans la transformation numérique.<br/>3. Créer un réseau unique et solide entre les acteurs du numérique.\n4. Renforcer les capacités des jeunes acteurs à travers des panels et des formations de groupe durant les deux jours du festival.<br/>5. Identifier les avantages et les défis de l'utilisation de la transformation numérique pour promouvoir le développement durable.<br/>6. Proposer des recommandations pratiques pour aider les entreprises à intégrer le développement durable dans leur stratégie de transformation numérique.",
             isOpen: false,
             linked: false ,
         },
         {
             id: 4,
             question: "Quelles sont les activités principales qui meubleront le Tdev Festival 3 ?",
-            answer: "1. Organisation de panels de discussions et de débats impliquant des experts de l'industrie, des représentants gouvernementaux, des entrepreneurs et des chercheurs.\n2. Organisation d'émissions radiophoniques et télévisées spéciales consacrées à la transformation numérique et à son rôle dans le développement durable.\n3. Organisation d'un concours de programmation compétitive pour stimuler les participants et identifier les talents dans la résolution de problème et la création d'algorithmes.\n4. Organisation de formations pratiques et interactives pour renforcer les compétences des jeunes acteurs dans le domaine du numérique.",
+            answer: "1. Organisation de panels de discussions et de débats impliquant des experts de l'industrie, des représentants gouvernementaux, des entrepreneurs et des chercheurs.<br/>2. Organisation d'émissions radiophoniques et télévisées spéciales consacrées à la transformation numérique et à son rôle dans le développement durable.<br/>3. Organisation d'un concours de programmation compétitive pour stimuler les participants et identifier les talents dans la résolution de problème et la création d'algorithmes.<br/>4. Organisation de formations pratiques et interactives pour renforcer les compétences des jeunes acteurs dans le domaine du numérique.",
             isOpen: false,
             linked: false ,
         },

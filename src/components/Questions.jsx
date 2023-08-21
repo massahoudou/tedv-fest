@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Questions = ({ faqItems }) => {
@@ -25,7 +26,7 @@ const Questions = ({ faqItems }) => {
         >
           <div
             onClick={() => toggleFaqState(item)}
-            className={`lg:w-9/12 mx-auto py-7 border-grey-400 border-b-[1px] transition-all duration-100 ${item.isOpen ? 'bg-green-100' : ''
+            className={`lg:w-9/12 mx-auto py-7 border-grey-400 border-b-[1px] transition-all duration-100 ${item.isOpen ? 'bg-green-50' : ''
               }`}
           >
             <div className="text-left px-3">
@@ -58,9 +59,16 @@ const Questions = ({ faqItems }) => {
                 </span>
               </div>
               {item.isOpen && (
-                <p className="pt-5 text-sm transition-all duration-100 leading-relaxed" data-aos="fade-left" >
+                <p className="pt-5  transition-all duration-100 leading-relaxed" data-aos="fade-left" >
                   {item.answer}
+                  <br />
+                  { item.linked && (
+                    item.links.map((link, index )=> {
+                      return  <Link  className='text-bold text-green-700 py-2 block underline'  passHref href={link.link} key={index}>{link.title}</Link>
+                    })
+                  )}
                 </p>
+               
               )}
             </div>
           </div>

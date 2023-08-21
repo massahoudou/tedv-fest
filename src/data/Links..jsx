@@ -27,7 +27,7 @@ const Links = [
  {
     name: "Faq",
     link: "/faq",
-    deseable: true ,
+    deseable: false ,
  },
  {
     name: "Contact",

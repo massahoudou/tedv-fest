@@ -1,7 +1,9 @@
 import { motion } from "framer-motion"
+import Link from "next/link"
 export const Date = () => {
     return <>
-        <div
+   <div className="flex  h-fit  md:flex-nowrap flex-wrap items-center md:gap-5 ">
+   <div
            data-aos="fade-up" data-aos-delay=""
          className="rounded-full  bg-gradient-to-l to-red-500 to-30% from-pink-600 w-fit flex gap-1 md:gap-3 p-1 md:p-2 text-sm mb-2 items-center sm:font-semibold">
             <motion.span >
@@ -14,5 +16,9 @@ export const Date = () => {
                 25 au 26 Août 2023
             </span>
         </div>
+        <div  data-aos="fade-up" data-aos-delay=""  className="uppercase text-sm  sm:text-md ">
+        VENUE : <Link passHref href="https://goo.gl/maps/GKMNterS8hLG7Y8g6 " className="text-primary animate-pulse"> ENERGY GENERATION  </Link>
+        </div>
+   </div>
     </>
 }

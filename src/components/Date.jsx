@@ -12,8 +12,8 @@ export const Date = () => {
                 </svg>
 
             </motion.span>
-            <span className="uppercase text-sm  sm:text-md ">
-                25 au 26 Août 2023
+            <span className="uppercase text-sm  sm:text-md p-2 ">
+                25 au 26 Août 2023 p-2 
             </span>
         </div>
         <div  data-aos="fade-up" data-aos-delay=""  className="uppercase text-sm  sm:text-md ">

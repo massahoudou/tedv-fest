@@ -11,27 +11,27 @@ const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: "--font-ant
 const SectionProgram = () => {
     const [items, setItems] = useState([
         {
-            id: 1,
-            title: "Premier jour",
-            date: "25 AOUT 2023",
-            active: true,
-            content: [
+            "id": 1,
+            "title": "Premier jour",
+            "date": "25 AOUT 2023",
+            "active": true,
+            "content": [
                 {
                     "debut": "08:00",
                     "fin": "09:30",
                     "title": "Accueil",
-                    "description": "Enregistrement des participants et petit déjeuner",
+                    "description": "Enregistrement des participants et pause-café",
                     "active": false
                 },
                 {
                     "debut": "09:30",
-                    "fin": "09:45",
+                    "fin": "09:40",
                     "title": "Discours",
-                    "description": "Discours du Président de TDEV, de la Ministre de l'Économie numérique et de la Transformation digitale et de la Ministre du Développement à la Base de la Jeunesse et de l'Emploi des Jeunes.",
+                    "description": "Discours du Président de TDEV",
                     "active": false
                 },
                 {
-                    "debut": "09:45",
+                    "debut": "09:40",
                     "fin": "10:00",
                     "title": "Photo de famille",
                     "description": "",
@@ -48,7 +48,7 @@ const SectionProgram = () => {
                     "debut": "11:05",
                     "fin": "11:25",
                     "title": "Keynote 1",
-                    "description": "L'Art et la Science de l'UI/UX: Une décennie de Transformation Numérique.",
+                    "description": "L'Art et la Science de l'UI/UX: Une décennie de Transformation Numérique",
                     "active": false
                 },
                 {
@@ -88,53 +88,45 @@ const SectionProgram = () => {
                 },
                 {
                     "debut": "15:10",
-                    "fin": "15:40",
+                    "fin": "15:50",
                     "title": "Workshop A",
-                    "description": "Monitorer votre application en production",
+                    "description": "Monitorer votre application en production\nWorkshop B : Automatiser le web scraping avec les Github actions",
                     "active": false
                 },
                 {
-                    "debut": "15:45",
-                    "fin": "16:05",
+                    "debut": "15:55",
+                    "fin": "16:20",
                     "title": "Keynote 2",
                     "description": "Comment la création de contenus web peut impacter le racisme et la misogynie en ligne ?",
                     "active": false
                 },
                 {
-                    "debut": "16:10",
-                    "fin": "16:50",
-                    "title": "Workshop B",
-                    "description": "Automatiser le web scraping avec les Github actions",
-                    "active": false
-                },
-                {
-                    "debut": "16:55",
-                    "fin": "17:25",
+                    "debut": "16:25",
+                    "fin": "17:05",
                     "title": "Workshop C",
-                    "description": "Construisez votre site web avec Notion",
+                    "description": "Plongez dans l’univers du Lowcode/Nocode avec Microsoft Power Platform et Power Virtual Agents\nWorkshop D : Comment assurer une Expérience Utilisateur intuitive tout en priorisant l'Accessibilité : Guides Pratiques pour les Designers et Développeurs",
                     "active": false
                 },
                 {
-                    "debut": "17:25",
-                    "fin": "17:30",
-                    "title": "Mot de fin",                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                    "debut": "17:10",
+                    "fin": "17:20",
+                    "title": "Mot de fin",
                     "description": "",
                     "active": false
                 }
             ]
-            
-        },
+        },        
         {
-            id: 2,
-            title: "deuxième jour",
-            date: "26 AOUT 2023",
-            active: false,
-            content: [
+            "id": 2,
+            "title": "Deuxième jour",
+            "date": "26 AOUT 2023",
+            "active": false,
+            "content": [
                 {
                     "debut": "08:00",
                     "fin": "09:30",
                     "title": "Accueil",
-                    "description": "Enregistrement des participants et petit déjeuner",
+                    "description": "Enregistrement des participants et pause-café",
                     "active": false
                 },
                 {
@@ -161,47 +153,40 @@ const SectionProgram = () => {
                 {
                     "debut": "12:05",
                     "fin": "12:45",
-                    "title": "Workshop D",
-                    "description": "Comment assurer une Expérience Utilisateur intuitive tout en priorisant l'Accessibilité : Guides Pratiques pour les Designers et Développeurs",
+                    "title": "Keynote 4",
+                    "description": "L’impact de la digitalisation sur les processus RH",
                     "active": false
                 },
                 {
                     "debut": "12:50",
                     "fin": "14:00",
-                    "title": "Pause Déjeuner",
-                    "description": "Pause Déjeuner + Job Dating",
+                    "title": "Pause Déjeuner + Job Dating",
+                    "description": "",
                     "active": false
                 },
                 {
                     "debut": "14:05",
                     "fin": "14:25",
-                    "title": "Keynote 4",
+                    "title": "Keynote 5",
                     "description": "BEYOND INNOVATION",
                     "active": false
                 },
                 {
                     "debut": "14:30",
-                    "fin": "14:50",
+                    "fin": "15:15",
                     "title": "Workshop E",
-                    "description": "ISMS, Cybersécurité et Protection des données : Normes, Exigences, Procédures et documentation.",
+                    "description": "ISMS, Cybersécurité et Protection des données : Normes, Exigences, Procédures et documentation\nWorkshop F : Construisez votre site web avec Notion",
                     "active": false
                 },
                 {
-                    "debut": "14:55",
-                    "fin": "15:40",
-                    "title": "Workshop F",
-                    "description": "Plongez dans l’univers du Lowcode/Nocode avec Microsoft Power Platform et Power Virtual Agents",
-                    "active": false
-                },
-                {
-                    "debut": "15:45",
-                    "fin": "16:40",
+                    "debut": "15:20",
+                    "fin": "16:20",
                     "title": "TDEV Open Talk",
                     "description": "Nous répondons aux questions des participants par rapport aux différents programmes de TDEV et les activités à venir",
                     "active": false
                 },
                 {
-                    "debut": "16:45",
+                    "debut": "16:25",
                     "fin": "17:00",
                     "title": "Annonce et remise des packs",
                     "description": "Annonce et remise des packs aux gagnants du #TDEVFest23Live",
@@ -222,8 +207,8 @@ const SectionProgram = () => {
                     "active": false
                 }
             ]
-            
-        },
+        }
+        
 
     ]);
     const handleClick = (item) => {
@@ -243,7 +228,7 @@ const SectionProgram = () => {
     return <div id="program" className="h-fit  py-20 w-11/12 md:w-10/12  mx-auto ">
         <h5 className="text-7xl lg:text-[8rem] uppercase text-left md:text-center">
             <Heading>
-                Programmes
+                Programme
             </Heading>
         </h5>
         <div  data-aos="fade-up" daa-aos-delay="200" className="flex justify-center ">

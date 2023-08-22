@@ -16,7 +16,7 @@ export const Date = () => {
                 25 au 26 Août 2023 p-2 
             </span>
         </div>
-        <div  data-aos="fade-up" data-aos-delay=""  className="uppercase text-sm  sm:text-md ">
+        <div  data-aos="fade-up" data-aos-delay=""  className="uppercase text-sm  sm:text-md font-medium ">
         VENUE : <Link  target="_blank" passHref href="https://goo.gl/maps/GKMNterS8hLG7Y8g6 " className="text-primary animate-pulse"> ENERGY GENERATION  </Link>
         </div>
    </div>

@@ -71,7 +71,7 @@ const Navbar = ({ black }) => {
                                     </li>
                             })}
                             <li>
-                                <FillButton href="/inscription" title="S'inscrire maintenant " />
+                                <FillButton href="./files/PROGRAMME-DU-TDEV-FESTIVAL-2023.pdf" title="Télécharger le programme " />
                             </li>
                         </ul>
 
@@ -109,7 +109,7 @@ const Navbar = ({ black }) => {
                         </ul>
                     </div>
                     <div className="text-white   w-fit">
-                        <FillButton href="/inscription" title="Inscription " />
+                        <FillButton href="./files/PROGRAMME-DU-TDEV-FESTIVAL-2023.pdf" title="Télécharger le prgramme " />
                     </div>
                 </div>
             </div>

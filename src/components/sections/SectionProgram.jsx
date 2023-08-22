@@ -20,7 +20,7 @@ const SectionProgram = () => {
                     "debut": "08:00",
                     "fin": "09:30",
                     "title": "Accueil",
-                    "description": "Enregistrement des participants et pause-café",
+                    "description": "Enregistrement des participants et petit déjeuner",
                     "active": false
                 },
                 {

@@ -15,7 +15,7 @@ const Links = [
     deseable: true ,
  },
  {
-    name: "Programmes",
+    name: "Programme",
     link: "/#program",
     deseable: false ,
  },

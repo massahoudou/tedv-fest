@@ -7,7 +7,7 @@ import { Sectionheader } from '@/components/sections/SectionsHeaders'
 import SectionProgram  from '@/components/sections/SectionProgram'
 import { useEffect } from 'react';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 import AOS from 'aos';                                                                                                                                                                                                                                                                                                                                                                                                  
-
+import { Analytics } from '@vercel/analytics/react';
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -17,7 +17,7 @@ export default function Home() {
     window.addEventListener('load', AOS.refresh)
   },[])
   return <div>
-
+    <Analytics />
     <Sectionheader target={'2023-08-25T07:59:59'}/>
     <SectionAbout />
     <SectionProgram/>

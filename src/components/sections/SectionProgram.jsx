@@ -104,8 +104,15 @@ const SectionProgram = () => {
                     "debut": "16:25",
                     "fin": "17:05",
                     "title": "Workshop C",
-                    "description": "Plongez dans l’univers du Lowcode/Nocode avec Microsoft Power Platform et Power Virtual Agents\nWorkshop D : Comment assurer une Expérience Utilisateur intuitive tout en priorisant l'Accessibilité : Guides Pratiques pour les Designers et Développeurs",
+                    "description": "Plongez dans l’univers du Lowcode/Nocode avec Microsoft Power Platform et Power Virtual Agents",
                     "active": false
+                },
+                {
+                    "debut": "",
+                    "fin": "",
+                    "title":"Workshop D",
+                    "description": " Comment assurer une Expérience Utilisateur intuitive tout en priorisant l'Accessibilité : Guides Pratiques pour les Designers et Développeurs",
+                    "active": "false",
                 },
                 {
                     "debut": "17:10",

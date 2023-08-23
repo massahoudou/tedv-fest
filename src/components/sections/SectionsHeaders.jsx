@@ -50,7 +50,7 @@ export const Sectionheader = ({ target }) => {
 
   return <>
     <Navbar black={false} />
-    <header id="header" className='pt-20 md:p-0 bg-dark flex items-center   text-white h-screen relative overflow-hidden'>
+    <header id="header" className='pt-32 sm:pt-20 md:p-0 bg-dark flex items-center   text-white h-screen relative overflow-hidden'>
       <div className='w-11/12 md:w-10/12 mx-auto md:mt-12   h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
@@ -59,11 +59,11 @@ export const Sectionheader = ({ target }) => {
           </h1>
           <p
             data-aos="fade-up" data-aos-delay="200"
-            className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12 md:mb-14 leading-relaxed'>
+            className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12  mb-5 md:mb-14 leading-relaxed'>
             Découvrez le TDEV Festival, l&apos;événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable.
           </p>
-          <div className='flex justify-start items-center  py-2 md:py-3 '>
-            <FillButton href="#program" title="Voir le programme " />
+          <div className='flex md:flex-nowrap gap-3 md:gap-0 flex-wrap justify-start items-center  py-5 sm:py-4  md:py-3 '>
+            <FillButton  href="#program" title="Le programme " />
             <OutlineButton href="#about" title="Apprendre plus" />
 
           </div>

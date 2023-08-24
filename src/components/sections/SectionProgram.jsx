@@ -90,7 +90,14 @@ const SectionProgram = () => {
                     "debut": "15:10",
                     "fin": "15:50",
                     "title": "Workshop A",
-                    "description": "Monitorer votre application en production\nWorkshop B : Automatiser le web scraping avec les Github actions",
+                    "description": "Monitorer votre application en production",
+                    "active": false
+                },
+                {
+                    "debut": "",
+                    "fin": "",
+                    "title": "Workshop B",
+                    "description": "Automatiser le web scraping avec les Github actions",
                     "active": false
                 },
                 {
@@ -112,7 +119,7 @@ const SectionProgram = () => {
                     "fin": "",
                     "title":"Workshop D",
                     "description": " Comment assurer une Expérience Utilisateur intuitive tout en priorisant l'Accessibilité : Guides Pratiques pour les Designers et Développeurs",
-                    "active": "false",
+                    "active": false,
                 },
                 {
                     "debut": "17:10",
@@ -182,8 +189,15 @@ const SectionProgram = () => {
                     "debut": "14:30",
                     "fin": "15:15",
                     "title": "Workshop E",
-                    "description": "ISMS, Cybersécurité et Protection des données : Normes, Exigences, Procédures et documentation\nWorkshop F : Construisez votre site web avec Notion",
+                    "description": "ISMS, Cybersécurité et Protection des données : Normes, Exigences, Procédures et documentation ",
                     "active": false
+                },
+                {
+                    "debut": "",
+                    "fin": "",
+                    "title": "Workshop F",
+                    "description": " Construisez votre site web avec Notion",
+                    "active": false 
                 },
                 {
                     "debut": "15:20",

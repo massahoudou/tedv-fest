@@ -50,7 +50,7 @@ export const Sectionheader = ({ target }) => {
 
   return <>
     <Navbar black={false} />
-    <header id="header" className='pt-32 sm:pt-20 md:p-0 bg-dark flex items-center   text-white h-screen relative overflow-hidden'>
+    <header id="header" className='pt-32 sm:pt-20   lg:p-0 bg-dark flex items-center   text-white h-screen relative overflow-hidden'>
       <div className='w-11/12 md:w-10/12 mx-auto md:mt-12   h-full justify-evenly md:justify-normal items-center z-10 flex flex-wrap lg:flex-nowrap'>
         <div className="h-4/6 md:h-4/6 lg:h-fit flex flex-col justify-center lg:justify-start max-xl:justify-center   ">
           <Date />
@@ -69,7 +69,7 @@ export const Sectionheader = ({ target }) => {
           </div>
 
         </div>
-        <div className=' items-start justify-between  lg:items-baseline flex lg:flex-wrap h-full  md:w-full md:h-full lg:h-fit  gap-5  w-full lg:w-fit lg:gap-10  '>
+        <div className=' items-center md:items-start justify-between  lg:items-baseline flex lg:flex-wrap h-fit  md:w-full md:h-full lg:h-fit  gap-5  w-full lg:w-fit lg:gap-10 '>
           <div className="flex lg:gap-10 gap-5 justify-evenly lg:justify-center w-full">
             <TimeCard  first={true} time={days} title={"Jours"} delay={500}  translate={true}/>
             <TimeCard time={hours} title={"Heures"} delay={600} />

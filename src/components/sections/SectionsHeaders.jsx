@@ -59,10 +59,10 @@ export const Sectionheader = ({ target }) => {
           </h1>
           <p
             data-aos="fade-up" data-aos-delay="200"
-            className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12  mb-5 md:mb-14 leading-relaxed'>
+            className='  text-normal  lg:text-lg  lg:p-0 lg:w-9/12  mb-2 md:mb-14 leading-relaxed'>
             Découvrez le TDEV Festival, l&apos;événement incontournable qui explore la synergie entre la transformation numérique et le développement durable, pour un avenir innovant et écologiquement responsable.
           </p>
-          <div className='flex md:flex-nowrap gap-3 md:gap-0 flex-wrap justify-start items-center  py-5 sm:py-4  md:py-3 '>
+          <div className='flex md:flex-nowrap gap-2 md:gap-0 flex-wrap justify-start items-center  py-5 sm:py-3  md:py-3 '>
             <FillButton  href="#program" title="Le programme " />
             <OutlineButton href="#about" title="Apprendre plus" />
 

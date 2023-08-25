@@ -31,7 +31,7 @@ const SectionAbout = () => {
                 </p>
                 <div className='flex md:flex-nowrap flex-wrap gap-3 md:gap-5  items-center justify-start py-3 '>
                 <FillButton  href="#program" title="Le programme " />
-            <OutlineButton href="#about" title="Apprendre plus" />
+            <OutlineButton href="/apropos" title="Apprendre plus" />
                 </div>
             </div>
 

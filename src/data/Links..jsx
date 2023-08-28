@@ -12,7 +12,7 @@ const Links = [
  {
     name: "Intervenants",
     link: "#speakers",
-    deseable: false ,
+    deseable: true ,
  },
  
  {

@@ -22,7 +22,7 @@ export default function Home() {
     <Analytics />
     <Sectionheader target={'2023-08-25T07:59:59'}/>
     <SectionAbout />
-    <SectionSpeaker/>
+   
     <SectionProgram/>
     <SectionSponsor />
 <SectionGallery/>

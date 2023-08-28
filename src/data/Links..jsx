@@ -12,13 +12,19 @@ const Links = [
  {
     name: "Intervenants",
     link: "#speaker",
-    deseable: true ,
+    deseable: false ,
  },
+ 
  {
     name: "Programme",
     link: "/#program",
     deseable: false ,
  },
+ {
+   name: "Galleries",
+   link: "#galleries",
+   deseable: false ,
+},
  {
     name: "hackaton",
     link: "/hackaton",

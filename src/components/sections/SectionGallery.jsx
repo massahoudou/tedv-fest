@@ -4,7 +4,7 @@ import Heading from "../Heading";
 import { FillButton } from "../Button";
 import Gallery from "@/data/Gallery";
 const SectionGallery = () => {
-    return <div id="gallery" className="h-fit py-20 w-11/12 md:w-10/12 mx-auto ">
+    return <div id="galleries" className="h-fit py-20 w-11/12 md:w-10/12 mx-auto ">
         <h3 className="text-center">
             <Heading>
                 Galerie
@@ -14,7 +14,7 @@ const SectionGallery = () => {
                 {Gallery.map((g,key) => {
                     return <Image key={key} 
                     loading="lazy"
-                        className="  lg:w-2/12 h-full object-cover" data-aos="zoom-in-right"
+                        className="  lg:w-2/12 h-full object-cover" data-aos="zoom-in-right" data-aos-delay={key * 100 }
                        src={g.url}
                        width={500}
                        height={500}

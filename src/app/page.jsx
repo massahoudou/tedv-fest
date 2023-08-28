@@ -8,6 +8,8 @@ import SectionProgram  from '@/components/sections/SectionProgram'
 import { useEffect } from 'react';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 import AOS from 'aos';                                                                                                                                                                                                                                                                                                                                                                                                  
 import { Analytics } from '@vercel/analytics/react';
+import SectionGallery from '@/components/sections/SectionGallery';
+import SectionSpeaker from '@/components/sections/SectionSpeaker';
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -20,9 +22,10 @@ export default function Home() {
     <Analytics />
     <Sectionheader target={'2023-08-25T07:59:59'}/>
     <SectionAbout />
+    <SectionSpeaker/>
     <SectionProgram/>
     <SectionSponsor />
-
+<SectionGallery/>
     <SectionContact />
   </div>
 

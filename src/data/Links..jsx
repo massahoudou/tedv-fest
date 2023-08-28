@@ -22,7 +22,7 @@ const Links = [
  },
  {
    name: "Galleries",
-   link: "#galleries",
+   link: "#gallerie",
    deseable: false ,
 },
  {

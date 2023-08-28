@@ -11,7 +11,7 @@ const Links = [
  },
  {
     name: "Intervenants",
-    link: "#speaker",
+    link: "#speakers",
     deseable: false ,
  },
  
